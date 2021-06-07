@@ -6,42 +6,109 @@ An alternative set of beginner friendly help docs for commonly used functions in
 
 Install qelp, but don't attach it. This way you can avoid namespace conflicts.
 
-library(devtools)  
-install_github("cobriant/qelp")
+`library(devtools)`  
+`install_github("cobriant/qelp")`
 
 ## Start reading the docs!
 
 See qelp docs for a function:  
-?qelp::select
+`?qelp::select`
 
 See normal help docs for a function:  
-?select
+`?select`
 
 ### List of qelp docs
 
 #### dplyr
 
-[X] select  
-[X] mutate  
-[X] arrange  
-[X] filter  
-[X] group_by  
-[X] summarize  
+[X] `arrange`  
+[X] `filter`  
+[X] `group_by`  
+[X] `mutate`  
+[X] `select`  
+[X] `summarize`  
 
 *More coming soon!*
 
 #### base
 
+[ ] `c`  
+[ ] `install.packages`  
+[ ] `library`  
+[ ] `list`  
+[ ] `log`  
+[ ] `log2`  
+[ ] `log10`  
+[ ] `max`  
+[ ] `min`  
+[ ] `mean`  
+[ ] `names`  
+[ ] `nrow`  
+[ ] `ncol`  
+[ ] `quantile`  
+[ ] `rep`  
+[ ] `sample`  
+[ ] `sd`  
+[ ] `seq`  
+[ ] `sum`  
+
 #### broom
+
+[ ] `tidy`  
 
 #### forcats
 
+[ ] `factor`  
+[ ] `levels`  
+[ ] `fct_infreq`  
+
+#### gapminder
+
+[ ] `gapminder`  
+
 #### ggplot2
+
+[ ] `ggplot`  
+[ ] `geom_segment`  
+[ ] `geom_abline`  
+[ ] `geom_vline`  
+[ ] `geom_hline`  
+[ ] `geom_rect`  
+[ ] `geom_area`  
+[ ] `geom_density`  
+[ ] `geom_histogram`  
+[ ] `geom_bar`  
+[ ] `geom_freqpoly`  
+[ ] `geom_point`  
+[ ] `geom_jitter`  
+[ ] `geom_line`  
+[ ] `geom_smooth`  
+[ ] `geom_col`  
+[ ] `geom_boxplot`  
+[ ] `geom_violin`  
+[ ] `facet_grid`  
+[ ] `facet_wrap`  
+[ ] `labs`  
+[ ] `scale_*_manual`  
 
 #### magrittr
 
+[ ] `%>%`  
+
 #### purrr
+
+[ ] `map`  
+[ ] `map2`  
+[ ] `pmap`  
+[ ] `reduce`  
+[ ] `accumulate`  
 
 #### tibble
 
+[ ] `tibble`  
+[ ] `view`  
+
 #### tidyr
+
+[ ] `drop_na`  
+[ ] `replace_na`  
