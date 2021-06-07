@@ -1,10 +1,10 @@
-#' Select columns of a tibble
+#' Select columns of a data frame
 #'
-#' Select columns of a tibble by name, and rename
+#' Select columns of a data frame by name, and rename
 #' or rearrange if needed.
 #'
 #' @details
-#' The first argument [select()] takes is a tibble.
+#' The first argument [select()] takes is a data frame.
 #' After that, you'll name the variables that you
 #' want to keep, or use '-' to name variables that
 #' you want to drop.

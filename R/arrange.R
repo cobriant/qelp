@@ -1,12 +1,12 @@
-#' Arrange rows of a tibble
+#' Arrange rows of a data frame
 #'
-#' Re-arranges rows of a tibble by the variable of your choice, ascending or descending.
+#' Re-arranges rows of a data frame by the variable of your choice, ascending or descending.
 #'
 #' @details
-#' The first argument [arrange()] takes is a tibble.
+#' The first argument [arrange()] takes is a data frame.
 #' After that, you'll name the variables (usually
 #' just one variable) that you want to arrange the
-#' tibble by.
+#' data frame by.
 #'
 #' `data %>% arrange(...)`
 #'

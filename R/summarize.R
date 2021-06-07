@@ -1,10 +1,10 @@
-#' Summarize data in a tibble
+#' Summarize data in a data frame
 #'
-#' Summarizes a tibble by reducing it down to just a few rows using helper functions.
+#' Summarizes a data frame by reducing it down to just a few rows using helper functions.
 #'
 #' @details
-#' The first argument [summarize()] takes is a tibble.
-#' The tibble can be grouped (see [group_by()]) or not.
+#' The first argument [summarize()] takes is a data frame.
+#' The data frame can be grouped (see [group_by()]) or not.
 #' After that, you'll name the summary helper functions
 #' you'd like to use on which variables.
 #'
@@ -34,7 +34,7 @@
 #'
 #' -----------------------------------
 #'
-#' # If the tibble has been grouped, summarize()
+#' # If the data frame has been grouped, summarize()
 #' # will return the number of rows as there are
 #' # groups.
 #'

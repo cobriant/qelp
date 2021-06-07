@@ -1,11 +1,11 @@
-#' Filter rows of a tibble
+#' Filter rows of a data frame
 #'
-#' Filter out the rows of a tibble that don't meet your conditions.
+#' Filter out the rows of a data frame that don't meet your conditions.
 #'
 #' @details
-#' The first argument [filter()] takes is a tibble.
+#' The first argument [filter()] takes is a data frame.
 #' After that, you'll name the conditions that you want to
-#' filter the tibble by.
+#' filter the data frame by.
 #'
 #' `filter(data, ...)`
 #'

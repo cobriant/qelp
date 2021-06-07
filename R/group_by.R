@@ -1,14 +1,14 @@
-#' Group rows of a tibble
+#' Group rows of a data frame
 #'
-#' Converts a tibble into a grouped tibble. Pairs well
+#' Converts a data frame into a grouped data frame. Pairs well
 #' with [summarize()] or [mutate()]. Operations that you do after
 #' [group_by()] will be performed by group.
 #'
 #' @details
-#' The first argument group_by() takes is a tibble.
+#' The first argument group_by() takes is a data frame.
 #' After that, you'll name the variables (usually
 #' just one variable) that you want to group the
-#' tibble by.
+#' data frame by.
 #'
 #' `group_by(data, ...)`
 #'
