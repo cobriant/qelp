@@ -4,7 +4,7 @@ An alternative set of beginner friendly help docs for commonly used functions in
 
 ## Getting started
 
-Install qelp, but don't attach it. This way you'll have no name space conflicts.
+Install qelp, but don't attach it. This way you can avoid namespace conflicts.
 
 library(devtools)  
 install_github("cobriant/qelp")
@@ -17,9 +17,9 @@ See qelp docs for a function:
 See normal help docs for a function:  
 ?select
 
-## List of qelp docs
+### List of qelp docs
 
-### dplyr
+#### dplyr
 
 [X] select  
 [X] mutate  
@@ -27,3 +27,21 @@ See normal help docs for a function:
 [X] filter  
 [X] group_by  
 [X] summarize  
+
+*More coming soon!*
+
+#### base
+
+#### broom
+
+#### forcats
+
+#### ggplot2
+
+#### magrittr
+
+#### purrr
+
+#### tibble
+
+#### tidyr
