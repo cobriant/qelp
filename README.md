@@ -1,20 +1,32 @@
-# qelp
+# qelp (quick help)
 
-An alternative set of beginner friendly help docs for commonly used functions in R and the Tidyverse. Because sometimes, less is more.
+An alternative set of beginner friendly help docs for commonly used functions in R and the Tidyverse. Because sometimes, less is more!
 
 ## Getting started
 
+Install qelp, but don't attach it. This way you'll have no name space conflicts.
+
 library(devtools)
+
 install_github("cobriant/qelp")
-library(qelp, pos = 5)
 
 ## Start reading the docs!
 
-### dplyr functions
+See qelp help docs for a function:
 
 ?qelp::select
-?qelp::filter
-?qelp::mutate
-?qelp::arrange
-?qelp::summarize
-?qelp::group_by
+
+See normal help docs for a function:
+
+?select
+
+## List of qelp docs
+
+### dplyr
+
+[X] select
+[X] mutate
+[X] arrange
+[X] filter
+[X] group_by
+[X] summarize
