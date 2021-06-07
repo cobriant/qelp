@@ -6,18 +6,15 @@ An alternative set of beginner friendly help docs for commonly used functions in
 
 Install qelp, but don't attach it. This way you'll have no name space conflicts.
 
-library(devtools)
-
+library(devtools)  
 install_github("cobriant/qelp")
 
 ## Start reading the docs!
 
-See qelp help docs for a function:
-
+See qelp docs for a function:  
 ?qelp::select
 
-See normal help docs for a function:
-
+See normal help docs for a function:  
 ?select
 
 ## List of qelp docs
