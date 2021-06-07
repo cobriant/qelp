@@ -21,94 +21,92 @@ See normal help docs for a function:
 
 #### dplyr
 
-[X] `arrange`  
-[X] `filter`  
-[X] `group_by`  
-[X] `mutate`  
-[X] `select`  
-[X] `summarize`  
-
-*More coming soon!*
+- [x] `arrange`  
+- [x] `filter`  
+- [x] `group_by`  
+- [x] `mutate`  
+- [x] `select`  
+- [x] `summarize`  
 
 #### base
 
-[ ] `abs`  
-[X] `c`  
-[ ] `install.packages`  
-[ ] `library`  
-[X] `list`  
-[X] `log`  
-[ ] `max`  
-[ ] `min`  
-[ ] `mean`  
-[ ] `names`  
-[ ] `nrow`  
-[ ] `ncol`  
-[ ] `quantile`  
-[ ] `rep`  
-[ ] `sample`  
-[ ] `sd`  
-[ ] `seq`  
-[ ] `sqrt`  
-[ ] `sum`  
+- [ ] `abs`  
+- [x] `c`  
+- [ ] `install.packages`  
+- [ ] `library`  
+- [x] `list`  
+- [x] `log`  
+- [ ] `max`  
+- [ ] `min`  
+- [ ] `mean`  
+- [ ] `names`  
+- [ ] `nrow`  
+- [ ] `ncol`  
+- [ ] `quantile`  
+- [ ] `rep`  
+- [ ] `sample`  
+- [ ] `sd`  
+- [ ] `seq`  
+- [ ] `sqrt`  
+- [ ] `sum`  
 
 #### broom
 
-[ ] `tidy`  
+- [ ] `tidy`  
 
 #### forcats
 
-[ ] `factor`  
-[ ] `levels`  
-[ ] `fct_infreq`  
+- [ ] `factor`  
+- [ ] `levels`  
+- [ ] `fct_infreq`  
 
 #### gapminder
 
-[ ] `gapminder`  
+- [ ] `gapminder`  
 
 #### ggplot2
 
-[ ] `ggplot`  
-[ ] `geom_segment`  
-[ ] `geom_abline`  
-[ ] `geom_vline`  
-[ ] `geom_hline`  
-[ ] `geom_rect`  
-[ ] `geom_area`  
-[ ] `geom_density`  
-[ ] `geom_histogram`  
-[ ] `geom_bar`  
-[ ] `geom_freqpoly`  
-[ ] `geom_point`  
-[ ] `geom_jitter`  
-[ ] `geom_line`  
-[ ] `geom_smooth`  
-[ ] `geom_col`  
-[ ] `geom_boxplot`  
-[ ] `geom_violin`  
-[ ] `facet_grid`  
-[ ] `facet_wrap`  
-[ ] `labs`  
-[ ] `scale_*_manual`  
+- [ ] `ggplot`  
+- [ ] `geom_segment`  
+- [ ] `geom_abline`  
+- [ ] `geom_vline`  
+- [ ] `geom_hline`  
+- [ ] `geom_rect`  
+- [ ] `geom_area`  
+- [ ] `geom_density`  
+- [ ] `geom_histogram`  
+- [ ] `geom_bar`  
+- [ ] `geom_freqpoly`  
+- [ ] `geom_point`  
+- [ ] `geom_jitter`  
+- [ ] `geom_line`  
+- [ ] `geom_smooth`  
+- [ ] `geom_col`  
+- [ ] `geom_boxplot`  
+- [ ] `geom_violin`  
+- [ ] `facet_grid`  
+- [ ] `facet_wrap`  
+- [ ] `labs`  
+- [ ] `scale_*_manual`  
 
 #### magrittr
 
-[ ] `%>%`  
+- [ ] `%>%`  
 
 #### purrr
 
-[ ] `map`  
-[ ] `map2`  
-[ ] `pmap`  
-[ ] `reduce`  
-[ ] `accumulate`  
+- [ ] `map`  
+- [ ] `map2`  
+- [ ] `pmap`  
+- [ ] `reduce`  
+- [ ] `accumulate`  
 
 #### tibble
 
-[X] `tibble`  
-[ ] `view`  
+- [x] `tibble`  
+- [ ] `view`  
 
 #### tidyr
 
-[ ] `drop_na`  
-[ ] `replace_na`  
+- [ ] `drop_na`  
+- [ ] `replace_na`  
