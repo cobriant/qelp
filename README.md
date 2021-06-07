@@ -32,13 +32,12 @@ See normal help docs for a function:
 
 #### base
 
+[ ] `abs`  
 [X] `c`  
 [ ] `install.packages`  
 [ ] `library`  
 [X] `list`  
-[ ] `log`  
-[ ] `log2`  
-[ ] `log10`  
+[X] `log`  
 [ ] `max`  
 [ ] `min`  
 [ ] `mean`  
@@ -50,6 +49,7 @@ See normal help docs for a function:
 [ ] `sample`  
 [ ] `sd`  
 [ ] `seq`  
+[ ] `sqrt`  
 [ ] `sum`  
 
 #### broom
