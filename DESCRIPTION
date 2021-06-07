@@ -1,15 +1,14 @@
 Package: qelp
-Title: What the Package Does (One Line, Title Case)
+Title: Quick Help: Beginner friendly help docs for R and the Tidyverse
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Colleen",
+           family = "O'Briant",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "cobriant@uoregon.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Beginner friendly help documentation for commonly used functions in R and the Tidyverse.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
