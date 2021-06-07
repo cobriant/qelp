@@ -2,16 +2,16 @@
 % Please edit documentation in R/summarize.R
 \name{summarize}
 \alias{summarize}
-\title{Summarize data in a tibble}
+\title{Summarize data in a data frame}
 \usage{
 
 }
 \description{
-Summarizes a tibble by reducing it down to just a few rows using helper functions.
+Summarizes a data frame by reducing it down to just a few rows using helper functions.
 }
 \details{
-The first argument \code{\link[=summarize]{summarize()}} takes is a tibble.
-The tibble can be grouped (see \code{\link[=group_by]{group_by()}}) or not.
+The first argument \code{\link[=summarize]{summarize()}} takes is a data frame.
+The data frame can be grouped (see \code{\link[=group_by]{group_by()}}) or not.
 After that, you'll name the summary helper functions
 you'd like to use on which variables.
 
@@ -39,7 +39,7 @@ tibble(
 
 -----------------------------------
 
-# If the tibble has been grouped, summarize()
+# If the data frame has been grouped, summarize()
 # will return the number of rows as there are
 # groups.
 

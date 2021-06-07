@@ -32,10 +32,10 @@ See normal help docs for a function:
 
 #### base
 
-[ ] `c`  
+[X] `c`  
 [ ] `install.packages`  
 [ ] `library`  
-[ ] `list`  
+[X] `list`  
 [ ] `log`  
 [ ] `log2`  
 [ ] `log10`  
@@ -105,7 +105,7 @@ See normal help docs for a function:
 
 #### tibble
 
-[ ] `tibble`  
+[X] `tibble`  
 [ ] `view`  
 
 #### tidyr

@@ -2,7 +2,7 @@
 % Please edit documentation in R/mutate.R
 \name{mutate}
 \alias{mutate}
-\title{Mutate a tibble by adding variables}
+\title{Mutate a data frame by adding variables}
 \usage{
 
 }
@@ -10,7 +10,7 @@
 Adds new variables that may be combinations or transformations of existing variables.
 }
 \details{
-The first argument \code{\link[=mutate]{mutate()}} takes is a tibble.
+The first argument \code{\link[=mutate]{mutate()}} takes is a data frame.
 After that, you'll name the new variables you'd
 like to create and how you want to define them.
 

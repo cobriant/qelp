@@ -2,18 +2,18 @@
 % Please edit documentation in R/arrange.R
 \name{arrange}
 \alias{arrange}
-\title{Arrange rows of a tibble}
+\title{Arrange rows of a data frame}
 \usage{
 
 }
 \description{
-Re-arranges rows of a tibble by the variable of your choice, ascending or descending.
+Re-arranges rows of a data frame by the variable of your choice, ascending or descending.
 }
 \details{
-The first argument \code{\link[=arrange]{arrange()}} takes is a tibble.
+The first argument \code{\link[=arrange]{arrange()}} takes is a data frame.
 After that, you'll name the variables (usually
 just one variable) that you want to arrange the
-tibble by.
+data frame by.
 
 \code{data \%>\% arrange(...)}
 

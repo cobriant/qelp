@@ -2,16 +2,16 @@
 % Please edit documentation in R/select.R
 \name{select}
 \alias{select}
-\title{Select columns of a tibble}
+\title{Select columns of a data frame}
 \usage{
 
 }
 \description{
-Select columns of a tibble by name, and rename
+Select columns of a data frame by name, and rename
 or rearrange if needed.
 }
 \details{
-The first argument \code{\link[=select]{select()}} takes is a tibble.
+The first argument \code{\link[=select]{select()}} takes is a data frame.
 After that, you'll name the variables that you
 want to keep, or use '-' to name variables that
 you want to drop.

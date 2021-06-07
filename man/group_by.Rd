@@ -2,20 +2,20 @@
 % Please edit documentation in R/group_by.R
 \name{group_by}
 \alias{group_by}
-\title{Group rows of a tibble}
+\title{Group rows of a data frame}
 \usage{
 
 }
 \description{
-Converts a tibble into a grouped tibble. Pairs well
+Converts a data frame into a grouped data frame. Pairs well
 with \code{\link[=summarize]{summarize()}} or \code{\link[=mutate]{mutate()}}. Operations that you do after
 \code{\link[=group_by]{group_by()}} will be performed by group.
 }
 \details{
-The first argument group_by() takes is a tibble.
+The first argument group_by() takes is a data frame.
 After that, you'll name the variables (usually
 just one variable) that you want to group the
-tibble by.
+data frame by.
 
 \code{group_by(data, ...)}
 
