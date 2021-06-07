@@ -24,9 +24,9 @@ See normal help docs for a function:
 
 ### dplyr
 
-[X] select
-[X] mutate
-[X] arrange
-[X] filter
-[X] group_by
-[X] summarize
+[X] select  
+[X] mutate  
+[X] arrange  
+[X] filter  
+[X] group_by  
+[X] summarize  
