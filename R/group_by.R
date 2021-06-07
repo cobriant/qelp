@@ -1,0 +1,57 @@
+#' Group rows of a tibble
+#'
+#' Converts a tibble into a grouped tibble. Pairs well
+#' with [summarize()] or [mutate()]. Operations that you do after
+#' [group_by()] will be performed by group.
+#'
+#' @details
+#' The first argument group_by() takes is a tibble.
+#' After that, you'll name the variables (usually
+#' just one variable) that you want to group the
+#' tibble by.
+#'
+#' `group_by(data, ...)`
+#'
+#' `data %>% group_by(...)`
+#'
+#' @usage
+#'
+#' @examples
+#' # group_by() with summarize():
+#'
+#' tibble(
+#'   x = c(1, 1, 2, 2),
+#'   y = c(1, 3, 0, 2)
+#' ) %>%
+#'   group_by(x) %>%
+#'   summarize(y_total = sum(y))
+#'
+#' #> A tibble: 2 x 2
+#' #>    x y_total
+#'    <dbl>   <dbl>
+#' #>    1       4
+#' #>    2       2
+#'
+#' -----------------------------------
+#'
+#' library(gapminder)
+#'
+#' gapminder %>%
+#'   group_by(continent) %>%
+#'   summarize(gdp_mean = mean(gdpPercap))
+#'
+#' #> # A tibble: 5 x 2
+#' #> continent   gdp_mean
+#'    <fct>          <dbl>
+#' #> 1 Africa       2194.
+#' #> 2 Americas     7136.
+#' #> 3 Asia         7902.
+#' #> 4 Europe      14469.
+#' #> 5 Oceania     18622.
+#'
+#' @export
+#' @seealso
+#'
+#' Other dplyr verbs: [filter()], [select()], [summarize()], [mutate()], [arrange()]
+#'
+group_by <- function(){}
