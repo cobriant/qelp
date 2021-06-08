@@ -33,12 +33,12 @@ See normal help docs for a function:
 - [ ] `abs`  
 - [x] `c`  
 - [ ] `install.packages`  
-- [ ] `library`  
+- [x] `library`  
 - [x] `list`  
 - [x] `log`  
-- [ ] `max`  
-- [ ] `min`  
-- [ ] `mean`  
+- [x] `max`  
+- [x] `min`  
+- [x] `mean`  
 - [ ] `names`  
 - [ ] `nrow`  
 - [ ] `ncol`  

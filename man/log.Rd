@@ -7,13 +7,13 @@
 
 }
 \description{
-Compute a natural logarithm of a value, or the natural log of each element of a vector.
+Compute the natural logarithm of a value, or the natural log of each element of a vector.
 }
 \details{
 \code{log(x, base = exp(1))}
 }
 \examples{
-# log(1) == 1
+# Natural log of e:
 
 log(exp(1))
 
@@ -48,5 +48,5 @@ gapminder \%>\%
 
 }
 \seealso{
-\code{\link[=log2]{log2()}}, \code{\link[=log10]{log10()}}, \code{\link[=exp]{exp()}}, \code{\link[=mutate]{mutate()}}
+\code{\link[base:Log]{base::log2()}}, \code{\link[base:Log]{base::log10()}}, \code{\link[base:Log]{base::exp()}}, \code{\link[=mutate]{mutate()}}
 }
