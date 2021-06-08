@@ -39,13 +39,12 @@ See normal help docs for a function:
 - [x] `max`  
 - [x] `min`  
 - [x] `mean`  
-- [ ] `names`  
-- [ ] `nrow`  
-- [ ] `ncol`  
-- [ ] `quantile`  
-- [ ] `rep`  
-- [ ] `sample`  
-- [ ] `sd`  
+- [x] `nrow`  
+- [x] `ncol`  
+- [x] `quantile`  
+- [x] `rep`  
+- [x] `sample`  
+- [x] `sd`  
 - [ ] `seq`  
 - [ ] `sqrt`  
 - [ ] `sum`  
