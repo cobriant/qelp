@@ -1,6 +1,6 @@
 # qelp (quick help)
 
-An alternative set of beginner friendly help docs for commonly used functions in R and the Tidyverse. Because sometimes, less is more!
+An alternative set of beginner friendly help docs for commonly used functions in R and the tidyverse. Because sometimes, less is more!
 
 ## Getting started
 
@@ -18,23 +18,6 @@ See normal help docs for a function:
 `?select`
 
 ### List of qelp docs
-
-#### dplyr
-
-- [x] `arrange`  
-- [x] `filter`  
-- [x] `group_by`  
-- [x] `mutate`  
-- [x] `select`  
-- [x] `summarize`  
-- [ ] `distinct`  
-- [ ] `slice`  
-- [ ] `lag`  
-- [ ] `lead`  
-- [ ] `if_else`  
-- [ ] `case_when`  
-- [ ] `bind_rows`  
-- [ ] `left_join`  
 
 #### base
 
@@ -58,6 +41,23 @@ See normal help docs for a function:
 #### broom
 
 - [ ] `tidy`  
+
+#### dplyr
+
+- [x] `arrange`  
+- [x] `filter`  
+- [x] `group_by`  
+- [x] `mutate`  
+- [x] `select`  
+- [x] `summarize`  
+- [ ] `distinct`  
+- [ ] `slice`  
+- [ ] `lag`  
+- [ ] `lead`  
+- [ ] `if_else`  
+- [ ] `case_when`  
+- [ ] `bind_rows`  
+- [ ] `left_join`  
 
 #### forcats
 
