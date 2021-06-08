@@ -27,12 +27,19 @@ See normal help docs for a function:
 - [x] `mutate`  
 - [x] `select`  
 - [x] `summarize`  
+- [ ] `distinct`  
+- [ ] `slice`  
+- [ ] `lag`  
+- [ ] `lead`  
+- [ ] `if_else`  
+- [ ] `case_when`  
+- [ ] `bind_rows`  
+- [ ] `left_join`  
 
 #### base
 
-- [ ] `abs`  
 - [x] `c`  
-- [ ] `install.packages`  
+- [x] `install.packages`  
 - [x] `library`  
 - [x] `list`  
 - [x] `log`  
@@ -45,9 +52,8 @@ See normal help docs for a function:
 - [x] `rep`  
 - [x] `sample`  
 - [x] `sd`  
-- [ ] `seq`  
-- [ ] `sqrt`  
-- [ ] `sum`  
+- [x] `seq`  
+- [x] `sum`  
 
 #### broom
 

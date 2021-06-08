@@ -10,7 +10,7 @@
 Returns the standard deviation of the elements of x.
 }
 \details{
-First argument \code{x}: is a numeric vector.
+First argument \code{x}: a numeric vector.
 
 Second argument \code{na.rm = FALSE}: by default, NA's are
 left in the data. Setting \code{na.rm = TRUE} will remove
