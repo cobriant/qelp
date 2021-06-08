@@ -10,9 +10,10 @@
 Filter out the rows of a data frame that don't meet your conditions.
 }
 \details{
-The first argument \code{\link[=filter]{filter()}} takes is a data frame.
-After that, you'll name the conditions that you want to
-filter the data frame by.
+First argument: a data frame.
+
+Next arguments: conditions on variables using logical operators
+like \code{>}, \code{<}, \code{==}, \code{!=}, and \code{\%in\%}.
 
 \code{filter(data, ...)}
 
@@ -55,14 +56,14 @@ tibble(
 library(gapminder)
 
 gapminder \%>\%
-  filter(country == "Mexico",
+  filter(country \%in\% c("Mexico", "Guatemala"),
          year == 1997)
 
-# A tibble: 1 x 6
-#> country continent  year lifeExp      pop gdpPercap
-   <fct>   <fct>     <int>   <dbl>    <int>     <dbl>
-#>  Mexico  Americas  1997    73.7 95895146     9767.
-
+#>  A tibble: 2 x 6
+#>     country   continent  year lifeExp      pop gdpPercap
+       <fct>     <fct>     <int>   <dbl>    <int>     <dbl>
+#>   1 Guatemala Americas   1997    66.3  9803875     4684.
+#>   2 Mexico    Americas   1997    73.7 95895146     9767.
 
 }
 \seealso{

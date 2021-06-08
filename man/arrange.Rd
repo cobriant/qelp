@@ -10,10 +10,10 @@
 Re-arranges rows of a data frame by the variable of your choice, ascending or descending.
 }
 \details{
-The first argument \code{\link[=arrange]{arrange()}} takes is a data frame.
-After that, you'll name the variables (usually
-just one variable) that you want to arrange the
-data frame by.
+First argument: a data frame.
+
+Next arguments: the variable that you want to arrange by. If you specify
+a second variable, it will be used for breaking ties in the first variable.
 
 \code{data \%>\% arrange(...)}
 

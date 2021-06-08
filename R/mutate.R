@@ -3,9 +3,9 @@
 #' Adds new variables that may be combinations or transformations of existing variables.
 #'
 #' @details
-#' The first argument [mutate()] takes is a data frame.
-#' After that, you'll name the new variables you'd
-#' like to create and how you want to define them.
+#' First argument: a data frame.
+#'
+#' Next arguments: the new variables you'd like to add.
 #'
 #' `mutate(data, ...)`
 #'
@@ -33,8 +33,7 @@
 #' library(gapminder)
 #'
 #' gapminder %>%
-#'   mutate(gdp_total = gdpPercap*pop) %>%
-#'   select(-continent, -lifeExp)
+#'   mutate(gdp_total = gdpPercap*pop)
 #'
 #' #> # A tibble: 1,704 x 5
 #' #>   country      year      pop gdpPercap    gdp_total

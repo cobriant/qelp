@@ -28,8 +28,7 @@
 #'
 #' -----------------------------------
 #'
-#' # Use log() as a helper function
-#' # with mutate():
+#' # Use log() with mutate():
 #'
 #' library(gapminder)
 #'

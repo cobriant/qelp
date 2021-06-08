@@ -2,13 +2,15 @@
 #'
 #' Converts a data frame into a grouped data frame. Pairs well
 #' with [summarize()] or [mutate()]. Operations that you do after
-#' [group_by()] will be performed by group.
+#' [group_by()] will be performed by group. Grouping attributes
+#' are removed by [dplyr::ungroup()].
 #'
 #' @details
-#' The first argument group_by() takes is a data frame.
-#' After that, you'll name the variables (usually
-#' just one variable) that you want to group the
-#' data frame by.
+#' First argument: a data frame.
+#'
+#' Next argument: a variable to use as the basis for grouping.
+#' If you provide more than one variable, every distinct
+#' combination will be separate groups.
 #'
 #' `group_by(data, ...)`
 #'
@@ -31,6 +33,27 @@
 #'    <dbl>   <dbl>
 #' #>    1       4
 #' #>    2       2
+#'
+#' -----------------------------------
+#'
+#' # group_by multiple variables:
+#'
+#' tibble(
+#'   x = c(1, 1, 0, 0, 1),
+#'   y = c(3, 2, 3, 2, 3),
+#'   z = c(4, 6, 4, 6, 6)
+#' ) %>%
+#'   group_by(x, y) %>%
+#'   summarize(z_mean = mean(z))
+#'
+#' #> # A tibble: 4 x 3
+#' #> # Groups:   x [2]
+#' #>    x     y z_mean
+#'   <dbl> <dbl>  <dbl>
+#' #>    0     2      6
+#' #>    0     3      4
+#' #>    1     2      6
+#' #>    1     3      5
 #'
 #' -----------------------------------
 #'

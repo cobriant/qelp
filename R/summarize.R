@@ -1,12 +1,14 @@
 #' Summarize data in a data frame
 #'
-#' Summarizes a data frame by reducing it down to just a few rows using helper functions.
+#' Summarizes a data frame by reducing it down to just a
+#' few rows using aggregate functions.
 #'
 #' @details
-#' The first argument [summarize()] takes is a data frame.
-#' The data frame can be grouped (see [group_by()]) or not.
-#' After that, you'll name the summary helper functions
-#' you'd like to use on which variables.
+#'
+#' First argument: a data frame, which may be grouped (see [group_by()]]).
+#'
+#' Next arguments: an aggregate function applied to a variable. Make sure
+#' to give your aggregation a name.
 #'
 #' `summarize(data, ...)`
 #'
@@ -34,8 +36,8 @@
 #'
 #' -----------------------------------
 #'
-#' # If the data frame has been grouped, summarize()
-#' # will return the number of rows as there are
+#' # If the data frame has been grouped, summarize
+#' # will return the same number of rows as there are
 #' # groups.
 #'
 #' tibble(
@@ -75,7 +77,7 @@
 #' @export
 #' @seealso
 #'
-#' Some helper functions: [mean()], [sd()], [median()], [quantile()], [n()]
+#' Some aggregate functions: [mean()], [sd()], [median()], [quantile()], [n()]
 #'
 #' Other dplyr verbs: [filter()], [group_by()], [arrange()], [mutate()], [select()]
 #'

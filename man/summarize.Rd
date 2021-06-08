@@ -7,13 +7,14 @@
 
 }
 \description{
-Summarizes a data frame by reducing it down to just a few rows using helper functions.
+Summarizes a data frame by reducing it down to just a
+few rows using aggregate functions.
 }
 \details{
-The first argument \code{\link[=summarize]{summarize()}} takes is a data frame.
-The data frame can be grouped (see \code{\link[=group_by]{group_by()}}) or not.
-After that, you'll name the summary helper functions
-you'd like to use on which variables.
+First argument: a data frame, which may be grouped (see \code{\link[=group_by]{group_by()}}]).
+
+Next arguments: an aggregate function applied to a variable. Make sure
+to give your aggregation a name.
 
 \code{summarize(data, ...)}
 
@@ -39,8 +40,8 @@ tibble(
 
 -----------------------------------
 
-# If the data frame has been grouped, summarize()
-# will return the number of rows as there are
+# If the data frame has been grouped, summarize
+# will return the same number of rows as there are
 # groups.
 
 tibble(
@@ -79,7 +80,7 @@ gapminder \%>\%
 
 }
 \seealso{
-Some helper functions: \code{\link[=mean]{mean()}}, \code{\link[=sd]{sd()}}, \code{\link[=median]{median()}}, \code{\link[=quantile]{quantile()}}, \code{\link[=n]{n()}}
+Some aggregate functions: \code{\link[=mean]{mean()}}, \code{\link[=sd]{sd()}}, \code{\link[=median]{median()}}, \code{\link[=quantile]{quantile()}}, \code{\link[=n]{n()}}
 
 Other dplyr verbs: \code{\link[=filter]{filter()}}, \code{\link[=group_by]{group_by()}}, \code{\link[=arrange]{arrange()}}, \code{\link[=mutate]{mutate()}}, \code{\link[=select]{select()}}
 }

@@ -11,10 +11,11 @@ Select columns of a data frame by name, and rename
 or rearrange if needed.
 }
 \details{
-The first argument \code{\link[=select]{select()}} takes is a data frame.
-After that, you'll name the variables that you
-want to keep, or use '-' to name variables that
-you want to drop.
+First argument: a data frame.
+
+Next argument: name the variables you want to keep in the order
+you want them to be in. Alternatively, use \code{-} to name the
+variables you want to drop.
 
 \code{data \%>\% select(...)}
 
@@ -67,11 +68,11 @@ tibble(
   select(low_numbers = x, y)
 
 #> # A tibble: 3 x 2
-#>   low_numbers     y
-           <dbl> <dbl>
-#>             1     4
-#>             2     5
-#>             3     6
+#> low_numbers     y
+         <dbl> <dbl>
+#>           1     4
+#>           2     5
+#>           3     6
 
 -----------------------------------
 
