@@ -4,7 +4,11 @@ An alternative set of beginner friendly help docs for commonly used functions in
 
 ## Getting started
 
-Install qelp, but don't attach it. This way you can avoid namespace conflicts.
+If you don't already have `devtools` installed, you'll need to do that.
+
+`install.packages("devtools")`
+
+Then install qelp, but don't attach it. This way you can avoid namespace conflicts that could make things really annoying.
 
 `library(devtools)`  
 `install_github("cobriant/qelp")`
@@ -96,7 +100,7 @@ See normal help docs for a function:
 
 #### magrittr
 
-- [ ] `%>%`  
+- [x] `%>%`  
 
 #### purrr
 
