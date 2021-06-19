@@ -75,6 +75,7 @@ See normal help docs for a function:
 
 #### ggplot2
 
+- [x] `qplot`
 - [ ] `ggplot`  
 - [ ] `geom_segment`  
 - [ ] `geom_abline`  

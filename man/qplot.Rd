@@ -55,6 +55,7 @@ htwt <- tibble(
 )
 
 # A simple scatterplot with sex represented by `color`:
+
 qplot(
   data = htwt,
   x = height,
@@ -67,6 +68,7 @@ qplot(
 -----------------------------------
 
 # A simple histogram with sex represented by `fill`:
+
 qplot(
   data = htwt,
   x = height,
