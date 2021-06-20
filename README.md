@@ -111,6 +111,10 @@ See normal help docs for a function:
 - [ ] `reduce`  
 - [ ] `accumulate`  
 
+#### stats
+
+- [x] `lm`
+
 #### tibble
 
 - [x] `tibble`  
