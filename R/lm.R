@@ -62,6 +62,15 @@
 #'
 #' -----------------------------------
 #'
+#' # Transformations of variables:
+#' #  To include a term squared, use I()
+#' #  to first parse the expression
+#' #  before fitting the model.
+#'
+#' lm(weight ~ I(height^2), data = htwt)
+#'
+#' -----------------------------------
+#'
 #' # Fitted values and residuals
 #'
 #' lm(weight ~ height, data = htwt) %>%
@@ -70,5 +79,12 @@
 #' lm(weight ~ height, data = htwt) %>%
 #'   residuals()
 #'
+#' -----------------------------------
+#'
+#' # R squared
+#'
+#' lm(weight ~ height, data = htwt) %>%
+#'   broom::glance() %>%
+#'   select(r.squared)
 #'
 lm <- function(){}

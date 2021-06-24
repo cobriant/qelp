@@ -56,13 +56,22 @@ lm(weight ~ 0 + height + sex, data = htwt)
 # Interaction terms: ':' versus '*'
 #   Use ':' to include only an interaction.
 #   Use '*' to also include the terms alone.
-#   So x*z is equivalent to 'x + z + x:z'
+#   So 'x*z' is equivalent to 'x + z + x:z'
 #   And `x*y*z` is equivalent to
-#     'x + z + y + x:y + x:z + y:z + x:y:z'
+#     'x + y + z + x:y + x:z + y:z + x:y:z'
 
 lm(weight ~ height:sex, data = htwt)
 
 lm(weight ~ height*sex, data = htwt)
+
+-----------------------------------
+
+# Transformations of variables:
+#  To include a term squared, use I()
+#  to first parse the expression
+#  before fitting the model.
+
+lm(weight ~ I(height^2), data = htwt)
 
 -----------------------------------
 
@@ -74,5 +83,12 @@ lm(weight ~ height, data = htwt) \%>\%
 lm(weight ~ height, data = htwt) \%>\%
   residuals()
 
+-----------------------------------
+
+# R squared
+
+lm(weight ~ height, data = htwt) \%>\%
+  broom::glance() \%>\%
+  select(r.squared)
 
 }
