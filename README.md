@@ -61,7 +61,7 @@ See normal help docs for a function:
 - [ ] `if_else`  
 - [ ] `case_when`  
 - [ ] `bind_rows`  
-- [ ] `left_join`  
+- [x] `left_join`  
 
 #### forcats
 
@@ -114,6 +114,10 @@ See normal help docs for a function:
 #### stats
 
 - [x] `lm`
+
+#### stringr
+
+- [x] `str_detect`
 
 #### tibble
 
