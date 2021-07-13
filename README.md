@@ -45,6 +45,7 @@ See normal help docs for a function:
 #### broom
 
 - [ ] `tidy`  
+- [ ] `glance`
 
 #### dplyr
 
@@ -105,15 +106,19 @@ See normal help docs for a function:
 
 #### purrr
 
-- [ ] `map`  
+- [ ] `map`  (coming soon)
 - [ ] `map2`  
 - [ ] `pmap`  
-- [ ] `reduce`  
-- [ ] `accumulate`  
+- [ ] `reduce`  (coming soon)
+- [ ] `accumulate`  (coming soon)
 
 #### stats
 
 - [x] `lm`
+- [ ] `rnorm`, `dnorm`, `pnorm`, `qnorm`
+- [ ] `rt`, `dt`, `pt`, `qt`
+- [ ] `rf`, `df`, `pf`, `qf`
+- [ ] `rchisq`, `dchisq`, `pchisq`, `qchisq`
 
 #### stringr
 
