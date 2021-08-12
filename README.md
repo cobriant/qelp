@@ -56,7 +56,7 @@ See normal help docs for a function:
 - [x] `select`  
 - [x] `summarize`  
 - [ ] `distinct`  
-- [ ] `slice`  
+- [ ] `slice`  (reserved)
 - [ ] `lag`  
 - [ ] `lead`  
 - [ ] `if_else`  
@@ -72,7 +72,7 @@ See normal help docs for a function:
 
 #### gapminder
 
-- [ ] `gapminder`  
+- [ ] `gapminder`  (reserved)
 
 #### ggplot2
 
@@ -80,7 +80,7 @@ See normal help docs for a function:
 - [ ] `ggplot`  
 - [ ] `geom_segment`  
 - [ ] `geom_abline`  
-- [ ] `geom_vline`  
+- [ ] `geom_vline`  (reserved)
 - [ ] `geom_hline`  
 - [ ] `geom_rect`  
 - [ ] `geom_area`  
@@ -106,11 +106,11 @@ See normal help docs for a function:
 
 #### purrr
 
-- [ ] `map`  (coming soon)
+- [ ] `map` 
 - [ ] `map2`  
 - [ ] `pmap`  
-- [ ] `reduce`  (coming soon)
-- [ ] `accumulate`  (coming soon)
+- [ ] `reduce` 
+- [ ] `accumulate` 
 
 #### stats
 
