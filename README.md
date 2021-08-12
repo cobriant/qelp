@@ -44,7 +44,7 @@ See normal help docs for a function:
 
 #### broom
 
-- [ ] `tidy`  
+- [ ] `tidy`  (reserved)
 - [ ] `glance`
 
 #### dplyr
@@ -77,7 +77,7 @@ See normal help docs for a function:
 #### ggplot2
 
 - [x] `qplot`
-- [ ] `ggplot`  
+- [ ] `ggplot` (reserved)  
 - [ ] `geom_segment`  
 - [ ] `geom_abline`  
 - [ ] `geom_vline`  (reserved)
@@ -85,7 +85,7 @@ See normal help docs for a function:
 - [ ] `geom_rect`  
 - [ ] `geom_area`  
 - [ ] `geom_density`  
-- [ ] `geom_histogram`  
+- [ ] `geom_histogram`  (reserved)
 - [ ] `geom_bar`  
 - [ ] `geom_freqpoly`  
 - [ ] `geom_point`  
