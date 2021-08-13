@@ -88,9 +88,9 @@ See normal help docs for a function:
 - [ ] `geom_histogram`  (reserved)
 - [ ] `geom_bar`  
 - [ ] `geom_freqpoly`  
-- [ ] `geom_point`  
-- [ ] `geom_jitter`  
-- [ ] `geom_line`  
+- [ ] `geom_point`  (reserved)
+- [ ] `geom_jitter`  (reserved)
+- [ ] `geom_line`  (reserved)
 - [ ] `geom_smooth`  
 - [ ] `geom_col`  
 - [ ] `geom_boxplot`  
