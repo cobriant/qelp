@@ -35,8 +35,10 @@ See normal help docs for a function:
 - [x] `mean`  
 - [x] `nrow`  
 - [x] `ncol`  
+- [ ] `paste`
 - [x] `quantile`  
 - [x] `rep`  
+- [ ] `round`
 - [x] `sample`  
 - [x] `sd`  
 - [x] `seq`  
@@ -59,10 +61,15 @@ See normal help docs for a function:
 - [ ] `slice`  (reserved)
 - [ ] `lag`  
 - [ ] `lead`  
-- [ ] `if_else`  
+- [x] `if_else`  
 - [ ] `case_when`  
 - [ ] `bind_rows`  
 - [x] `left_join`  
+- [ ] `count`
+
+#### estimatr
+
+- [ ] `iv_robust`
 
 #### forcats
 
@@ -92,6 +99,7 @@ See normal help docs for a function:
 - [ ] `geom_jitter`  (reserved)
 - [ ] `geom_line`  (reserved)
 - [ ] `geom_smooth`  
+- [ ] `geom_label`
 - [ ] `geom_col`  
 - [ ] `geom_boxplot`  
 - [ ] `geom_violin`  
@@ -112,9 +120,15 @@ See normal help docs for a function:
 - [ ] `reduce` 
 - [ ] `accumulate` 
 
+#### readr
+
+- [ ] `read_csv` 
+
 #### stats
 
 - [x] `lm`
+- [ ] `residuals`
+- [ ] `fitted.values`
 - [ ] `rnorm`, `dnorm`, `pnorm`, `qnorm`
 - [ ] `rt`, `dt`, `pt`, `qt`
 - [ ] `rf`, `df`, `pf`, `qf`
