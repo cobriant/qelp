@@ -1,0 +1,47 @@
+geom_density()
+
+geom_density is a type of mapping. The geom is used with ggplot to give a pleasing and smoothing view of how different factors in a dataset differ from one another.
+
+ggplot(
+  data(aes(x, color, fill) + 
+  geom_density(alpha)
+
+aes: aesthetic mapping.
+       
+data: data used for the density plot.
+
+x: variable chosen for the x-axis.
+
+color: color identifier of different variables or color name.
+
+alpha: opacity of variables, written as a fraction from 0 to 1.
+
+fill: the color inside of the variable.
+
+
+Examples
+
+
+library(gapminder)
+
+ggplot(
+  data = gapminder, 
+  aes(x = lifeExp, color = continent, fill = continent)
+) +
+  geom_density()
+
+----------------------------------------------------------------
+
+You can also add vertical lines to mark a position in the data plot. geom_vline represents a vertical line and where it needs to intercept on the x-axis
+
+library(gapminder)
+
+ggplot(
+  data = gapminder, 
+  aes(x = lifeExp, color = continent, fill = continent)
+) +
+  geom_density(alpha = .3) +
+  geom_vline(xintercept = 70)
+  
+  
+  
