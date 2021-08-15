@@ -1,0 +1,49 @@
+geom_area()
+
+Description
+
+geom_area is a type of plot, using ggplot. It shows the area of each variable by adjusting the settings you can see each individual variale compared to each other.
+
+
+ggplot(
+  data, aes(x, fill)
+) +
+  geom_area(stat, position, alpha)
+
+Arguments
+
+aes: aesthetic mapping.
+
+data: the data that you choose to disply in your plot.
+
+x: variable on the x-axis.
+
+fill: color of the inside of the variable.
+
+stat: change on the data for this layer, as a string
+
+position: position adjustment.
+
+alpha: opacity of variables, written as a fraction from 0 to 1.
+
+Examples
+
+library(gapminder)
+
+ggplot(
+  data = gapminder, 
+  aes(x = lifeExp, fill = continent)
+) +
+  geom_area(stat = "bin")
+
+------------------------------------------------
+Add alpha to give some opaqueness to be able to see all sets of data clearly.  
+  
+  
+library(gapminder)
+
+ggplot(
+  data = gapminder, 
+  aes(x = lifeExp, fill = continent)
+) +
+  geom_area(stat = "bin", position = "identity", alpha = .3)
