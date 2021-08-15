@@ -1,0 +1,87 @@
+#'Counts certain elements in a dataframe.
+#'
+#'Counts any number or item in a certain dataframe that you want to be counted. Counts the number of repeating occurances in a dataframe.
+#'
+#'First Argument: the dataframe that is due to be processed.
+#'
+#'Second Argument: Which variables to count by.
+#'
+#'
+#'`count(data, ...)`
+#'
+#'`data %>%
+#'    count(...)`
+#'
+#'
+#'@examples
+#'
+#'
+#'Count the number of countries in the dataset, gapminder.
+#'
+#'
+#'library(gapminder)
+#'
+#'count(gapminder, country)
+#'
+#'# A tibble: 142 x 2
+#'   country         n
+#'   <fct>       <int>
+#' 1 Afghanistan    12
+#' 2 Albania        12
+#' 3 Algeria        12
+#' 4 Angola         12
+#' 5 Argentina      12
+#' 6 Australia      12
+#' 7 Austria        12
+#' 8 Bahrain        12
+#' 9 Bangladesh     12
+#'10 Belgium        12
+# ... with 132 more rows
+#'
+#'
+#'----------------------------------------------------
+#'
+#'Count the number of countries per continent from the dataset, gapminder.
+#'
+#'
+#'library(gapminder)
+#'
+#'gapminder %>%
+#' count(continent, country)
+#'
+#' continent country                      n
+#'   <fct>     <fct>                    <int>
+#' 1 Africa    Algeria                     12
+#' 2 Africa    Angola                      12
+#' 3 Africa    Benin                       12
+#' 4 Africa    Botswana                    12
+#' 5 Africa    Burkina Faso                12
+#' 6 Africa    Burundi                     12
+#' 7 Africa    Cameroon                    12
+#' 8 Africa    Central African Republic    12
+#' 9 Africa    Chad                        12
+#'10 Africa    Comoros                     12
+#'# ... with 132 more rows
+#'> 
+#'
+#'----------------------------------------------------
+#'
+#'Count the number of names only, in the dataset.
+#'
+#'
+#'pets <- tibble(names = c("Steve", "Nancy", "Rufus", "Sandy", "Shaye"),
+#'               animal = c("dog", "cat", "fish", "lizard", "bird")
+#'              )
+#'
+#'count(pets, "names")
+#'
+# A tibble: 1 x 2
+#'  `"names"`     n
+#'  <chr>     <int>
+#'1 names         5
+#'
+#'
+count <- function(){}
+#'
+#'
+#'
