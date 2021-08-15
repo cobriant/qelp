@@ -65,7 +65,7 @@ See normal help docs for a function:
 - [ ] `case_when`  
 - [ ] `bind_rows`  
 - [x] `left_join`  
-- [ ] `count`
+- [x] `count`
 
 #### estimatr
 
@@ -84,18 +84,18 @@ See normal help docs for a function:
 #### ggplot2
 
 - [x] `qplot`
-- [ ] `ggplot` (reserved)  
+- [x] `ggplot`  
 - [ ] `geom_segment`  
 - [ ] `geom_abline`  
 - [ ] `geom_vline`  (reserved)
 - [ ] `geom_hline`  
 - [ ] `geom_rect`  
-- [ ] `geom_area`  
-- [ ] `geom_density`  
+- [x] `geom_area`  
+- [x] `geom_density`  
 - [ ] `geom_histogram`  (reserved)
 - [ ] `geom_bar`  
 - [ ] `geom_freqpoly`  
-- [ ] `geom_point`  (reserved)
+- [x] `geom_point`
 - [ ] `geom_jitter`  (reserved)
 - [ ] `geom_line`  (reserved)
 - [ ] `geom_smooth`  
@@ -117,7 +117,7 @@ See normal help docs for a function:
 - [ ] `map` 
 - [ ] `map2`  
 - [ ] `pmap`  
-- [ ] `reduce` 
+- [x] `reduce` 
 - [ ] `accumulate` 
 
 #### readr
