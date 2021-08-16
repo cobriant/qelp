@@ -1,0 +1,58 @@
+#' Encode a vector as a factor
+#' 
+#' @description
+#' 
+#' Encodes the category and enumerated arguments. 
+#' 
+#' If argument ordered is TRUE, the factor levels are assumed to be ordered and vice versa.
+#' 
+#' is.factor, is.ordered, as.factor and as.ordered are the membership and coercion functions for these classes.
+#' 
+#' @Usage
+#' 
+#' factor(x = character(), levels, labels = levels, exclude = NA, ordered = is.ordered(x), nmax = NA)
+#' 
+#' ordered(x,.)
+#' 
+#' is.factor(x)
+#' 
+#' is.ordered(x)
+#' as.factor(x)
+#' 
+#' as.ordered(x)
+#' 
+#' addNA(x, ifany = FALSE)
+#' 
+#' @Arguments
+#' 
+#' x: a vector of data, usually taking a small number of distinct values.
+#' 
+#' levels: an optional vector of the unique values (as character strings) that x might have taken. The default is the unique set of values taken by as.character(x), sorted into increasing order of x. Note that this set can be specified as smaller than sort(unique(x)).
+#' 
+#' labels: either an optional character vector of labels for the levels (in the same order as levels after removing those in exclude), or a character string of length 1. Duplicated values in labels can be used to map different values of x to the same factor level.
+#' 
+#' exclude: a vector of values to be excluded when forming the set of levels. This may be factor with the same level set as x or should be a character.
+#' 
+#' ordered: logical flag to determine if the levels should be regarded as ordered (in the order given).
+#' 
+#' nmax: an upper bound on the number of levels.
+#' 
+#' ifany: only add an NA level if it is used, i.e. if any(is.na(x)).
+#' 
+#' @Examples
+#' 
+#' NOT RUN{ff <- factor(substring("statistics", 1:10, 1:10), levels = letters))
+#' as.integer(ff)      # the internal codes
+#' (f. <- factor(ff))  # drops the levels that do not occur
+#' ff[, drop = TRUE]   # the same, more transparently
+#' factor(letters[1:20], labels = "letter")
+#' class(ordered(4:1)) # "ordered", inheriting from "factor"
+#' z <- factor(LETTERS[3:1], ordered = TRUE)
+#' }
+#' 
+#' ## suppose you want "NA" as a level, and to allow missing values.
+#' (x <- factor(c(1, 2, NA), exclude = NULL))
+#' is.na(x)[2] <- TRUE
+#' x  # [1] 1    <NA> <NA>
+#' is.na(x)
+#' # [1] FALSE  TRUE FALSE
