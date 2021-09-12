@@ -4,14 +4,18 @@
 \alias{\%>\%}
 \title{Pipe}
 \usage{
+# x %>% f()
+}
+\arguments{
+\item{x}{A data structure like a vector or tibble.}
 
+\item{f}{A function.}
 }
 \description{
-Pipe a data structure forward into a function call.
+Pipe data forward into a function call. \code{x \%>\% f()} becomes \code{f(x)}.
+Using pipes helps make code more clear and readable.
 }
 \details{
-\code{x \%>\% f()} becomes \code{f(x)}.
-
 The pipe takes \code{x} and inserts it into the first argument of \code{f()}:
 
 \code{x \%>\% f(y)} becomes \code{f(x, y)}
@@ -60,7 +64,4 @@ gapminder \%>\%
 #> 2  1957         51.5
 #> 3  1962         53.6
 
-}
-\seealso{
-dplyr verbs: \code{\link[=group_by]{group_by()}}, \code{\link[=summarize]{summarize()}}, \code{\link[=mutate]{mutate()}}, \code{\link[=filter]{filter()}}, \code{\link[=arrange]{arrange()}}, \code{\link[=select]{select()}}
 }

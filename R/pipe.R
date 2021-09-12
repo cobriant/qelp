@@ -1,32 +1,26 @@
 #' Pipe
 #'
-#' @description
+#' Pipe data forward into a function call. `x %>% f()` becomes `f(x)`.
+#' Using pipes helps make code more clear and readable.
 #'
-#' Pipe a data structure forward into a function call.
-#'
+#' @usage
+#' # x %>% f()
+#' @param x A data structure like a vector or tibble.
+#' @param f A function.
 #' @details
-#' `x %>% f()` becomes `f(x)`.
-#'
-#' -----------------------------------
-#'
 #' The pipe takes `x` and inserts it into the first argument of `f()`:
 #'
 #' `x %>% f(y)` becomes `f(x, y)`
-#'
-#' -----------------------------------
 #'
 #' You can use a period `.` to dictate exactly where you want the piped data to be inserted:
 #'
 #' `x %>% f(y, .)` becomes `f(y, x)`
 #'
-#' -----------------------------------
-#'
 #' You can do function composition using multiple pipes:
 #'
 #' `x %>% f() %>% g()` becomes `g(f(x))`
 #'
-#' @usage
-#'
+#' @export
 #' @examples
 #' tibble(
 #'   x = 1:5,
@@ -62,10 +56,5 @@
 #' #> 1  1952         49.1
 #' #> 2  1957         51.5
 #' #> 3  1962         53.6
-#'
-#' @export
-#' @seealso
-#'
-#' dplyr verbs: [group_by()], [summarize()], [mutate()], [filter()], [arrange()], [select()]
 #'
 `%>%` <- function(){}
