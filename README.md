@@ -46,7 +46,7 @@ See normal help docs for a function:
 
 #### broom
 
-- [ ] `tidy`  (reserved)
+- [ ] `tidy`
 - [ ] `glance`
 
 #### dplyr
@@ -58,7 +58,7 @@ See normal help docs for a function:
 - [x] `select`  
 - [x] `summarize`  
 - [ ] `distinct`  
-- [ ] `slice`  (reserved)
+- [ ] `slice`
 - [ ] `lag`  
 - [ ] `lead`  
 - [x] `if_else`  
@@ -71,15 +71,9 @@ See normal help docs for a function:
 
 - [ ] `iv_robust`
 
-#### forcats
-
-- [ ] `factor`  
-- [ ] `levels`  
-- [ ] `fct_infreq`  
-
 #### gapminder
 
-- [ ] `gapminder`  (reserved)
+- [ ] `gapminder` 
 
 #### ggplot2
 
@@ -87,17 +81,17 @@ See normal help docs for a function:
 - [x] `ggplot`  
 - [ ] `geom_segment`  
 - [ ] `geom_abline`  
-- [ ] `geom_vline`  (reserved)
+- [ ] `geom_vline`
 - [ ] `geom_hline`  
 - [ ] `geom_rect`  
 - [x] `geom_area`  
 - [x] `geom_density`  
-- [ ] `geom_histogram`  (reserved)
+- [ ] `geom_histogram` 
 - [ ] `geom_bar`  
 - [ ] `geom_freqpoly`  
 - [x] `geom_point`
-- [ ] `geom_jitter`  (reserved)
-- [ ] `geom_line`  (reserved)
+- [ ] `geom_jitter`
+- [x] `geom_line` 
 - [ ] `geom_smooth`  
 - [ ] `geom_label`
 - [ ] `geom_col`  
@@ -105,7 +99,7 @@ See normal help docs for a function:
 - [ ] `geom_violin`  
 - [ ] `facet_grid`  
 - [ ] `facet_wrap`  
-- [ ] `labs`  
+- [x] `labs`  
 - [ ] `scale_*_manual`  
 
 #### magrittr
@@ -142,8 +136,3 @@ See normal help docs for a function:
 
 - [x] `tibble`  
 - [ ] `view`  
-
-#### tidyr
-
-- [ ] `drop_na`  
-- [ ] `replace_na`  
