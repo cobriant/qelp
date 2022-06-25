@@ -61,7 +61,7 @@ See normal help docs for a function:
 - [x] `summarize`  
 - [x] `distinct`  
 - [x] `slice`
-- [ ] `lag`  
+- [x] `lag`  
 - [ ] `lead`  
 - [x] `if_else`  
 - [ ] `case_when`  
