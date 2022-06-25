@@ -1,6 +1,6 @@
 # qelp (quick help)
 
-An alternative set of beginner friendly help docs for commonly used functions in R and the tidyverse. Because sometimes, less is more!
+This is a set of beginner friendly help docs for commonly used functions in R and the tidyverse.
 
 ## Getting started
 
@@ -8,7 +8,7 @@ If you don't already have `devtools` installed, you'll need to do that.
 
 `install.packages("devtools")`
 
-Then install qelp, but don't attach it. This way you can avoid namespace conflicts that could make things really annoying.
+Then install qelp, but don't attach it using library(). This way you can avoid namespace conflicts that could make things really annoying.
 
 `library(devtools)`  
 `install_github("cobriant/qelp")`
@@ -35,7 +35,7 @@ See normal help docs for a function:
 - [x] `mean`  
 - [x] `nrow`  
 - [x] `ncol`  
-- [ ] `paste`
+- [x] `paste`
 - [x] `quantile`  
 - [x] `rep`  
 - [ ] `round`
