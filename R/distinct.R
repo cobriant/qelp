@@ -28,4 +28,6 @@
 #' #> 1   Kuwait     1957       58
 #' #> 2   Afganistan 1997     41.8
 #'
+#' @export
+#'
 distinct <- function(){}
