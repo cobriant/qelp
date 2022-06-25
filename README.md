@@ -38,7 +38,7 @@ See normal help docs for a function:
 - [x] `paste`
 - [x] `quantile`  
 - [x] `rep`  
-- [ ] `round`
+- [x] `round`
 - [x] `sample`  
 - [x] `sd`  
 - [x] `seq`  
