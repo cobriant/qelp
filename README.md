@@ -62,7 +62,7 @@ See normal help docs for a function:
 - [x] `distinct`  
 - [x] `slice`
 - [x] `lag`  
-- [ ] `lead`  
+- [x] `lead`  
 - [x] `if_else`  
 - [ ] `case_when`  
 - [ ] `bind_rows`  
