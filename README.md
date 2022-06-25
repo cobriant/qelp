@@ -57,7 +57,7 @@ See normal help docs for a function:
 - [x] `mutate`  
 - [x] `select`  
 - [x] `summarize`  
-- [ ] `distinct`  
+- [x] `distinct`  
 - [ ] `slice`
 - [ ] `lag`  
 - [ ] `lead`  
