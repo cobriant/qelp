@@ -1,5 +1,7 @@
 # qelp (quick help)
 
+<img alt="Getty Images" src="https://d279m997dpfwgl.cloudfront.net/wp/2020/07/GettyImages-1185351276.jpg" width="160" height="100" />
+
 This is a set of beginner friendly help docs for commonly used functions in R and the tidyverse.
 
 ## Getting started
