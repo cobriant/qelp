@@ -2,7 +2,7 @@
 
 <img alt="Getty Images" src="https://d279m997dpfwgl.cloudfront.net/wp/2020/07/GettyImages-1185351276.jpg" width="160" height="100" />
 
-This is a set of beginner friendly help docs for commonly used functions in R and the tidyverse.
+A big challenge for beginners who want to learn to program in R is that the R help documentation can be quite complicated. As a result, these novices often rely on Google to find answers to their problems. However, Googling your programming problems instead of reading the help docs is like going to the doctor and asking for a pill to fix your symptoms instead of figuring out what's really going on. It may provide some relief in the short run, but when you don't understand the functions you're using, you'll keep running into the same issues. The goal of this project is to create an antidote: simple, beginner-friendly help docs that have everything a beginner needs to know and nothing they don't.
 
 ## Getting started
 
