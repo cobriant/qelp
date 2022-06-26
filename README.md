@@ -25,7 +25,7 @@ See normal help docs for a function:
 
 ### List of qelp docs
 
-#### base
+#### [18/18] base
 
 - [x] `c`  
 - [x] `install.packages`  
@@ -48,14 +48,14 @@ See normal help docs for a function:
 
 -----------------------
 
-#### broom
+#### [0/2] broom
 
 - [ ] `glance`
 - [ ] `tidy`
 
 -----------------------
 
-#### dplyr
+#### [14/15] dplyr
 
 - [x] `arrange`  
 - [ ] `bind_rows`  
@@ -75,19 +75,19 @@ See normal help docs for a function:
 
 -------------------------
 
-#### estimatr
+#### [0/1] estimatr
 
 - [ ] `iv_robust`
 
 -------------------------
 
-#### gapminder
+#### [0/1] gapminder
 
 - [ ] `gapminder` 
 
 -------------------------
 
-#### ggplot2
+#### [7/25] ggplot2
 
 - [ ] `geom_abline`  
 - [x] `geom_area`  
@@ -116,13 +116,13 @@ See normal help docs for a function:
 
 -----------------------
 
-#### magrittr
+#### [1/1] magrittr
 
 - [x] `%>%`  
 
 -------------------------
 
-#### purrr
+#### [1/5] purrr
 
 - [ ] `accumulate` 
 - [ ] `map` 
@@ -132,13 +132,13 @@ See normal help docs for a function:
 
 -------------------------
 
-#### readr
+#### [0/1] readr
 
 - [ ] `read_csv` 
 
 -------------------------
 
-#### stats
+#### [1/7] stats
 
 - [ ] `fitted.values`
 - [x] `lm`
@@ -150,13 +150,13 @@ See normal help docs for a function:
 
 -------------------------
 
-#### stringr
+#### [1/1] stringr
 
 - [x] `str_detect`
 
 -------------------------
 
-#### tibble
+#### [1/2] tibble
 
 - [x] `tibble`  
 - [ ] `view`  
