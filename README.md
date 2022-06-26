@@ -55,10 +55,10 @@ See normal help docs for a function:
 
 -----------------------
 
-#### [14/15] dplyr
+#### [15/15] dplyr
 
 - [x] `arrange`  
-- [ ] `bind_rows`  
+- [x] `bind_rows`  
 - [x] `case_when`  
 - [x] `count`
 - [x] `distinct`  
