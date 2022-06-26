@@ -89,7 +89,7 @@ See normal help docs for a function:
 
 #### [7/25] ggplot2
 
-- [ ] `geom_abline`  
+- [x] `geom_abline`  
 - [x] `geom_area`  
 - [ ] `geom_bar`  
 - [ ] `geom_boxplot`  
