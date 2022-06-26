@@ -64,7 +64,7 @@ See normal help docs for a function:
 - [x] `lag`  
 - [x] `lead`  
 - [x] `if_else`  
-- [ ] `case_when`  
+- [x] `case_when`  
 - [ ] `bind_rows`  
 - [x] `left_join`  
 - [x] `count`
