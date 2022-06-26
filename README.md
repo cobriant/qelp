@@ -46,93 +46,115 @@ See normal help docs for a function:
 - [x] `seq`  
 - [x] `sum`  
 
+-----------------------
+
 #### broom
 
-- [ ] `tidy`
 - [ ] `glance`
+- [ ] `tidy`
+
+-----------------------
 
 #### dplyr
 
 - [x] `arrange`  
+- [ ] `bind_rows`  
+- [x] `case_when`  
+- [x] `count`
+- [x] `distinct`  
 - [x] `filter`  
 - [x] `group_by`  
-- [x] `mutate`  
-- [x] `select`  
-- [x] `summarize`  
-- [x] `distinct`  
-- [x] `slice`
+- [x] `if_else`  
 - [x] `lag`  
 - [x] `lead`  
-- [x] `if_else`  
-- [x] `case_when`  
-- [ ] `bind_rows`  
 - [x] `left_join`  
-- [x] `count`
+- [x] `mutate`  
+- [x] `select`  
+- [x] `slice`
+- [x] `summarize`  
+
+-------------------------
 
 #### estimatr
 
 - [ ] `iv_robust`
 
+-------------------------
+
 #### gapminder
 
 - [ ] `gapminder` 
 
+-------------------------
+
 #### ggplot2
 
-- [x] `qplot`
-- [x] `ggplot`  
-- [ ] `geom_segment`  
 - [ ] `geom_abline`  
-- [ ] `geom_vline`
-- [ ] `geom_hline`  
-- [ ] `geom_rect`  
 - [x] `geom_area`  
-- [x] `geom_density`  
-- [ ] `geom_histogram` 
 - [ ] `geom_bar`  
-- [ ] `geom_freqpoly`  
-- [x] `geom_point`
-- [ ] `geom_jitter`
-- [x] `geom_line` 
-- [ ] `geom_smooth`  
-- [ ] `geom_label`
-- [ ] `geom_col`  
 - [ ] `geom_boxplot`  
+- [ ] `geom_col`  
+- [x] `geom_density`  
+- [ ] `geom_freqpoly`  
+- [ ] `geom_histogram` 
+- [ ] `geom_hline`  
+- [ ] `geom_jitter`
+- [ ] `geom_label`
+- [x] `geom_line` 
+- [x] `geom_point`
+- [ ] `geom_rect`  
+- [ ] `geom_segment`  
+- [ ] `geom_smooth`  
 - [ ] `geom_violin`  
+- [ ] `geom_vline`
 - [ ] `facet_grid`  
 - [ ] `facet_wrap`  
+- [x] `ggplot`  
 - [x] `labs`  
+- [x] `qplot`
 - [ ] `scale_*_manual`  
+
+-----------------------
 
 #### magrittr
 
 - [x] `%>%`  
 
+-------------------------
+
 #### purrr
 
+- [ ] `accumulate` 
 - [ ] `map` 
 - [ ] `map2`  
 - [ ] `pmap`  
 - [x] `reduce` 
-- [ ] `accumulate` 
+
+-------------------------
 
 #### readr
 
 - [ ] `read_csv` 
 
+-------------------------
+
 #### stats
 
-- [x] `lm`
-- [ ] `residuals`
 - [ ] `fitted.values`
+- [x] `lm`
+- [ ] `rchisq`, `dchisq`, `pchisq`, `qchisq`
+- [ ] `residuals`
+- [ ] `rf`, `df`, `pf`, `qf`
 - [ ] `rnorm`, `dnorm`, `pnorm`, `qnorm`
 - [ ] `rt`, `dt`, `pt`, `qt`
-- [ ] `rf`, `df`, `pf`, `qf`
-- [ ] `rchisq`, `dchisq`, `pchisq`, `qchisq`
+
+-------------------------
 
 #### stringr
 
 - [x] `str_detect`
+
+-------------------------
 
 #### tibble
 
