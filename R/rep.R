@@ -1,41 +1,37 @@
-#' Repeat values
+#' Repeat Values
 #'
-#' @description
+#' Creates a vector by repeating values.
 #'
-#' Create a vector of repeated elements.
+#' The `times` argument controls how many times to repeat the entire vector,
+#' while `each` controls how many times to repeat each element.
 #'
-#' @details
-#' First argument `x`: a value or a vector. It can be any data type.
-#'
-#' Second argument `times`: the number of times you'd like to repeat `x`.
-#'
-#' Third argument `each`: if `x` is a vector, `each` will be the number
-#' of times you'd like to repeat each element of `x`.
-#'
+#' Typical use:
 #' `rep(x, times = 1, each = 1)`
 #'
-#' @usage
+#' @name rep
+#' @aliases rep
+#' @docType data
 #'
-#' @examples
+#' @section Arguments:
+#' \describe{
+#'   \item{x}{A value or vector to repeat.}
+#'   \item{times}{Number of times to repeat the entire vector.}
+#'   \item{each}{Number of times to repeat each element of `x`.}
+#' }
+#'
+#' @examplesIf interactive()
 #' rep(1, times = 3)
 #'
 #' #> [1] 1 1 1
-#'
-#' -----------------------------------
 #'
 #' rep(1:5, each = 2)
 #'
 #' #> [1] 1 1 2 2 3 3 4 4 5 5
 #'
-#' -----------------------------------
-#'
 #' c(rep("a", times = 3), rep("b", times = 2))
 #'
 #' #> [1] "a" "a" "a" "b" "b"
 #'
-#' @export
 #' @seealso
-#'
 #' [seq()], [c()], [sample()]
-#'
-rep <- function(){}
+NULL

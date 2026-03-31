@@ -1,28 +1,22 @@
-#' load a package
+#' Load a Package
 #'
-#' @description
+#' Load a package you have already installed into your current R session.
+#' Once loaded, all of its functions will be available for you to use.
 #'
-#' Load packages you've already installed
-#' into your current R session. After you've
-#' loaded it, all its functions will be
-#' available for you to use.
+#' The package name does not need quotes.
 #'
-#' @details
-#' The package name doesn't need quotes.
-#'
+#' Typical use:
 #' `library(package)`
 #'
-#' @usage
+#' @name library
+#' @aliases library
+#' @docType data
 #'
-#' @examples
-#'
+#' @examplesIf interactive()
 #' library(tidyverse)
 #'
 #' library(gapminder)
 #'
-#' @export
 #' @seealso
-#'
 #' [install.packages()]
-#'
-library <- function(){}
+NULL

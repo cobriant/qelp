@@ -1,26 +1,27 @@
-#' Standard deviation
+#' Standard Deviation
 #'
-#' @description
+#' Returns the standard deviation of a numeric vector.
 #'
-#' Returns the standard deviation of the elements of x.
+#' Missing values (`NA`) will cause the result to be `NA` unless you set
+#' `na.rm = TRUE`, which removes missing values before computing the standard deviation.
 #'
-#' @details
-#' First argument `x`: a numeric vector.
-#'
-#' Second argument `na.rm = FALSE`: by default, NA's are
-#' left in the data. Setting `na.rm = TRUE` will remove
-#' NA's in the vector before calculating the standard deviation.
-#'
+#' Typical use:
 #' `sd(x, na.rm = FALSE)`
 #'
-#' @usage
+#' @name sd
+#' @aliases sd
+#' @docType data
 #'
-#' @examples
+#' @section Arguments:
+#' \describe{
+#'   \item{x}{A numeric vector.}
+#'   \item{na.rm}{Whether to remove missing values before computing the standard deviation.}
+#' }
+#'
+#' @examplesIf interactive()
 #' c(4, 6, 2, 5) %>% sd()
 #'
 #' #> [1] 1.707825
-#'
-#' -----------------------------------
 #'
 #' library(gapminder)
 #'
@@ -31,16 +32,13 @@
 #'
 #' #> # A tibble: 5 x 2
 #' #>   continent lifeExp_sd
-#'      <fct>          <dbl>
+#' #>   <fct>          <dbl>
 #' #> 1 Africa         9.63
 #' #> 2 Americas       4.44
 #' #> 3 Asia           7.96
 #' #> 4 Europe         2.98
 #' #> 5 Oceania        0.729
 #'
-#' @export
 #' @seealso
-#'
 #' [mean()], [min()], [max()], [quantile()], [var()]
-#'
-sd <- function(){}
+NULL

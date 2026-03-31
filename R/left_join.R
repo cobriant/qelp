@@ -1,27 +1,27 @@
-#' Join two data frames, keeping all the rows in the left table
+#' Join Two Data Frames (Keep All Rows from the Left)
 #'
-#' Use `left_join()` to combine two data frames by a key.
-#' A key is a variable that the two data frames have in common.
+#' Combine two data frames by matching rows using one or more keys.
+#' All rows from the left data frame are kept, and matching rows from
+#' the right data frame are added where available.
 #'
-#' @details
+#' Typical use:
+#' `left_join(x, y, by = join_by(...))`
 #'
-#' @usage
+#' @name left_join
+#' @aliases left_join
+#' @docType data
 #'
-#' left_join(x, y, by = NULL)
+#' @section Arguments:
+#' \describe{
+#'   \item{x}{The left data frame. All rows are kept.}
+#'   \item{y}{The right data frame. Matching rows are added to `x`.}
+#'   \item{by}{Join specification created with `join_by()`.}
+#' }
 #'
-#' @export
-#' @param x The left data frame. All the rows will be kept.
-#' @param y The right data frame. Only the rows which correspond to the rows in `x` will be kept.
-#' @param by A character vector that specifies which variables are the keys.
-#'
-#' @usage
-#'
-#' @examples
+#' @examplesIf interactive()
 #' # Suppose you have two data sets:
 #'
-#' # The first one has census-type information
-#' # on people:
-#'
+#' # The first one has information on people:
 #' people <- tibble(
 #'   name = c("Anne", "Bruce", "Carlos"),
 #'   sex = c("F", "M", "M"),
@@ -29,9 +29,7 @@
 #'   ssn = c(123, 456, 789)
 #' )
 #'
-#' # The second data set has car registration
-#' # information on some of the same people:
-#'
+#' # The second data set has car registration information:
 #' drivers <- tibble(
 #'   name = c("Bruce", "Carlos", "Danielle"),
 #'   license_no = c(431, 765, 234),
@@ -39,21 +37,20 @@
 #'   car_make = c("Jeep", "Acura", "Toyota")
 #' )
 #'
-#' # Note that 'name' and 'ssn', which corresponds
-#' # to 'social_security', are in both datasets.
-#' # We'll use both of these variables as keys.
-#'
+#' # Join on matching name and SSN:
 #' left_join(
 #'   people,
 #'   drivers,
-#'   by = c("ssn" = "social_security", "name")
+#'   by = join_by(name, ssn == social_security)
 #' )
 #'
-#' A tibble: 3 x 6
-#'   name   sex   birthdate   ssn license_no car_make
-#'   <chr>  <chr> <chr>     <dbl>      <dbl> <chr>
-#' 1 Anne   F     19920206    123         NA NA
-#' 2 Bruce  M     19820405    456        431 Jeep
-#' 3 Carlos M     20001226    789        765 Acura
+#' #> # A tibble: 3 x 6
+#' #>   name   sex   birthdate   ssn license_no car_make
+#' #>   <chr>  <chr> <chr>     <dbl>      <dbl> <chr>
+#' #> 1 Anne   F     19920206    123         NA NA
+#' #> 2 Bruce  M     19820405    456        431 Jeep
+#' #> 3 Carlos M     20001226    789        765 Acura
 #'
-left_join <- function(){}
+#' @seealso
+#' Other joins: [inner_join()], [right_join()], [full_join()]
+NULL

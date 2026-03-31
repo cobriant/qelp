@@ -1,32 +1,37 @@
 #' Bind Rows
 #'
-#' Bind two or more data frames together by row. The result will
-#' be the two data frames stacked vertically, in the order that
-#' you call them. The data frames must have the same column names.
+#' Combine two or more data frames by stacking them vertically.
 #'
-#' @details
+#' The result contains all rows from each data frame. Columns are matched
+#' by name. If a column is missing in one data frame, it will be filled with `NA`.
 #'
-#' @usage
-#' bind_rows(x, y)
-#' 
-#' @export
-#' @param x The first data frame.
-#' @param y The second data frame.
+#' Typical use:
+#' `bind_rows(x, y, ...)`
 #'
-#' @examples
-#' # binding two data frames:
+#' @name bind_rows
+#' @aliases bind_rows
+#' @docType data
 #'
+#' @section Arguments:
+#' \describe{
+#'   \item{...}{Two or more data frames or tibbles.}
+#' }
+#'
+#' @examplesIf interactive()
+#' # Bind two data frames:
 #' bind_rows(
 #'   tibble(x = 1:2, y = 3:4),
 #'   tibble(x = 5:6, y = 7:8)
 #' )
 #'
-#' #> # A tibble: 4 × 2
-#' #>     x     y
-#' #> <int> <int>
-#' #>     1     3
-#' #>     2     4
-#' #>     5     7
-#' #>     6     8
-#' 
-bind_rows <- function(){}
+#' #> # A tibble: 4 x 2
+#' #>       x     y
+#' #>   <int> <int>
+#' #>       1     3
+#' #>       2     4
+#' #>       5     7
+#' #>       6     8
+#'
+#' @seealso
+#' [bind_cols()]
+NULL

@@ -1,42 +1,42 @@
-#' Draw an area plot
+#' Draw an Area Plot
 #'
-#' `geom_area` is a geom that should be used in conjunction
-#' with `ggplot` to draw an area plot.
+#' `geom_area()` adds a filled area under a line in a ggplot.
+#' It is commonly used to show how a quantity changes over a continuous x-axis.
 #'
-#' @usage
+#' Typical use:
+#' `+ geom_area()`
 #'
-#' ggplot(data, aes(x = var)) +
-#'   geom_area()
+#' @name geom_area
+#' @aliases geom_area
+#' @docType data
 #'
-#' @export
-#' @param data A tibble to be used for the area plot
-#' @param var Specify which variable should be drawn on the x-axis.
+#' @section Arguments:
+#' \describe{
+#'   \item{mapping}{Aesthetic mappings created with `aes()` (e.g., `x`, `y`, `fill`).}
+#'   \item{data}{Optional data frame for this layer.}
+#'   \item{...}{Other arguments such as `alpha`, `position`, or `stat`.}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(tidyverse)
 #' library(gapminder)
 #'
-#' # Visualize the distribution of a variable (compare to
-#' # geom_histogram)
-#'
+#' # Visualize a distribution (similar to a histogram):
 #' ggplot(gapminder, aes(x = lifeExp)) +
 #'   geom_area(stat = "bin")
 #'
-#' # Visualize the distribution of a variable by group:
-#'
+#' # Visualize distributions by group:
 #' ggplot(gapminder, aes(x = lifeExp, fill = continent)) +
 #'   geom_area(stat = "bin")
 #'
-#' # Adjust the previous plot so that groups overlap ("dodge")
-#' # instead of stack:
-#'
+#' # Use position = "dodge" instead of stacking:
 #' ggplot(gapminder, aes(x = lifeExp, fill = continent)) +
-#'   geom_area(stat = "bin", pos = "dodge")
+#'   geom_area(stat = "bin", position = "dodge")
 #'
-#' # Increase the transparency (alpha) of the area plot
-#' # so that overlapped information is visible:
-#'
+#' # Adjust transparency:
 #' ggplot(gapminder, aes(x = lifeExp, fill = continent)) +
-#'   geom_area(stat = "bin", pos = "dodge", alpha = .6)
+#'   geom_area(stat = "bin", position = "dodge", alpha = 0.6)
 #'
-geom_area <- function(){}
+#' @seealso
+#' [ggplot()], [aes()], [geom_line()], [geom_histogram()]
+NULL

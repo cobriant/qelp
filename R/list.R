@@ -1,41 +1,30 @@
-#' Create a list
-#'
-#' @description
+#' Create a List
 #'
 #' Combine elements to form a list. A list is a very flexible data structure.
-#' Elements of a list can be named or unnamed,
-#' can have different lengths, can have different data types,
-#' and can even be lists themselves.
+#' Elements can be named or unnamed, can have different lengths, can have
+#' different data types, and can even be lists themselves.
 #'
-#' @details
-#'
+#' Typical use:
 #' `list(...)`
 #'
-#' @usage
+#' @name list
+#' @aliases list
+#' @docType data
 #'
-#' @examples
-#' # Lists can have elements of different
-#' # data types:
-#'
+#' @examplesIf interactive()
+#' # Lists can have elements of different data types:
 #' list(1, 2, "apple", TRUE)
 #'
 #' #> [[1]]
 #' #> [1] 1
-#'
 #' #> [[2]]
 #' #> [1] 2
-#'
 #' #> [[3]]
 #' #> [1] "apple"
-#'
 #' #> [[4]]
 #' #> [1] TRUE
 #'
-#' ---------------------------------------
-#'
-#' # Lists can have elements of different
-#' # lengths:
-#'
+#' # Lists can have elements of different lengths:
 #' list(
 #'   1,
 #'   c(1, 2, 3),
@@ -44,17 +33,12 @@
 #'
 #' #> [[1]]
 #' #> [1] 1
-#'
 #' #> [[2]]
 #' #> [1] 1 2 3
-#'
 #' #> [[3]]
 #' #> [1]  TRUE FALSE
 #'
-#' ---------------------------------------
-#'
 #' # List elements can be named or unnamed:
-#'
 #' list(
 #'   numbers = 1:10,
 #'   c("apple", "banana", "economics")
@@ -62,15 +46,9 @@
 #'
 #' #> $numbers
 #' #> [1]  1  2  3  4  5  6  7  8  9 10
-#'
 #' #> [[2]]
 #' #> [1] "apple" "banana" "economics"
 #'
-#' @export
 #' @seealso
-#'
 #' Other R data structures: [c()], [tibble()]
-#'
-#' purrr functions: [map()], [map2()], [pmap()]
-#'
-list <- function(){}
+NULL

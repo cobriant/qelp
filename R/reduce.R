@@ -1,42 +1,43 @@
-#' Reduce a vector to a single value by iteratively applying a binary function
+#' Reduce a Vector to a Single Value
 #'
-#' @description
-#' Reduce a vector, `.x`, to a single value by calling a binary
-#' function (a function that takes two values), `.f`. `reduce` works by first applying
-#' the function to the first two elements of `.x`, then calling the function on the
-#' result of the first computation and the third element of `.x`, then on the result of that and the fourth element, and so on. Calling `reduce`
-#' on a vector with three elements using the function `f` is equivalent to calling `f(f(x1, x2), x3)`.
+#' Apply a binary function repeatedly to combine all elements of a vector
+#' into a single value.
 #'
-#' @usage
-#' reduce(.x, .f)
+#' The function is applied from left to right:
+#' `f(f(x1, x2), x3)` and so on.
 #'
-#' @export
-#' @param .x A list or vector
-#' @param .f A binary (2 argument function), which will be iteratively applied to the vector `.x`
+#' Typical use:
+#' `reduce(.x, .f)`
 #'
-#' @examples
-#' # `sum` is just reduce with .f = `+`:
+#' @name reduce
+#' @aliases reduce
+#' @docType data
 #'
+#' @section Arguments:
+#' \describe{
+#'   \item{.x}{A vector or list.}
+#'   \item{.f}{A binary (two-argument) function.}
+#' }
+#'
+#' @examplesIf interactive()
+#' # sum is equivalent to reduce with `+`:
 #' reduce(c(1, 2, 3), `+`)
 #'
-#' #> 6
+#' #> [1] 6
 #'
-#' -----------------------------------
-#'
-#' # .f = intersect
-#'
+#' # Use intersect across multiple vectors:
 #' reduce(
 #'   list(c(2, 6, 3, 4), c(4, 3, 2), c(1, 2, 3)),
 #'   intersect
-#'   )
+#' )
 #'
-#' #> 2 3
+#' #> [1] 2 3
 #'
-#' -----------------------------------
-#'
-#' # .f = `*`
-#'
+#' # Multiply all values together:
 #' 1:10 %>% reduce(`*`)
 #'
-#' #> 3628800
-reduce <- function(){}
+#' #> [1] 3628800
+#'
+#' @seealso
+#' [map()], [accumulate()]
+NULL

@@ -1,35 +1,39 @@
-#' Draw a line
+#' Draw a Line
 #'
-#' `geom_abline` is a geom that can be used to add a line
-#' layer to a ggplot based on a specified slope and y-intercept.
+#' `geom_abline()` adds a straight line to a ggplot using a specified
+#' slope and intercept.
 #'
-#' @usage
+#' Typical use:
+#' `geom_abline(slope = ..., intercept = ...)`
 #'
-#' ggplot(data, aes(x, y)) +
-#'   geom_abline(slope, intercept)
+#' @name geom_abline
+#' @aliases geom_abline
+#' @docType data
 #'
-#' @export
-#' @param data A data frame
-#' @param x Specify which variable should be drawn on the x-axis.
-#' @param y Specify which variable should be drawn on the y-axis.
-#' @param slope a number for the slope of the line
-#' @param intercept a number for the y-intercept of the line
+#' @section Arguments:
+#' \describe{
+#'   \item{slope}{Slope of the line.}
+#'   \item{intercept}{Y-intercept of the line.}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(gapminder)
 #'
 #' ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
 #'   geom_point() +
 #'   geom_abline(slope = 1/1000, intercept = 50)
 #'
-#' # Color, size, and linetype can also be manipulated:
-#'
+#' # Color, size, and linetype can also be modified:
 #' ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
 #'   geom_point() +
-#'   geom_abline(slope = 3/10000, 
-#'               intercept = 50, 
-#'               linetype = "dashed", 
-#'               color = "forestgreen", 
-#'               size = 4)
-#'               
-geom_abline <- function(){}
+#'   geom_abline(
+#'     slope = 3/10000,
+#'     intercept = 50,
+#'     linetype = "dashed",
+#'     color = "forestgreen",
+#'     size = 4
+#'   )
+#'
+#' @seealso
+#' [ggplot()], [geom_point()]
+NULL

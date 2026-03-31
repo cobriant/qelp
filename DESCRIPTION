@@ -1,16 +1,27 @@
 Package: qelp
-Title: Quick Help: Beginner friendly help docs for R and the Tidyverse
-Version: 0.0.0.9000
+Title: Quick Help for R and the Tidyverse
+Version: 0.1.0
 Authors@R: 
-    person(given = "Colleen",
-           family = "O'Briant",
-           role = c("aut", "cre"),
-           email = "cobriant@uoregon.edu",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Beginner friendly help documentation for commonly used functions in R and the Tidyverse.
+    person(
+      given = "Colleen",
+      family = "O'Briant",
+      role = c("aut", "cre"),
+      email = "cobriant@uoregon.edu"
+    )
+Description: Beginner-friendly help documentation for commonly used
+    functions in R and the tidyverse.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
-
+RoxygenNote: 7.3.3
+Imports:
+    magrittr
+Suggests:
+    broom,
+    gapminder,
+    tidyverse,
+    dplyr,
+    ggplot2,
+    purrr,
+    stringr,
+    tibble

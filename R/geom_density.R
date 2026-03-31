@@ -1,35 +1,40 @@
-#' Draw a density plot
+#' Draw a Density Plot
 #'
-#' `geom_density` is a geom that should be used in conjunction
-#' with `ggplot` to draw a density plot. Compare to histograms or area plots.
+#' `geom_density()` adds a smoothed density curve to a ggplot.
+#' It is often used to visualize the distribution of a continuous variable.
 #'
-#' @usage
+#' Typical use:
+#' `+ geom_density()`
 #'
-#' ggplot(data, aes(x = var)) +
-#'   geom_density()
+#' @name geom_density
+#' @aliases geom_density
+#' @docType data
 #'
-#' @export
-#' @param data A tibble to be used for the density plot
-#' @param var Specify which variable should be drawn on the x-axis.
+#' @section Arguments:
+#' \describe{
+#'   \item{mapping}{Aesthetic mappings created with `aes()` (e.g., `x`, `color`, `fill`).}
+#'   \item{data}{Optional data frame for this layer.}
+#'   \item{...}{Other arguments such as `alpha`, `linetype`, or `adjust`.}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(tidyverse)
 #' library(gapminder)
 #'
-#' # Draw a basic density plot:
-#'
+#' # Basic density plot:
 #' ggplot(gapminder, aes(x = lifeExp)) +
 #'   geom_density()
 #'
-#' # Compare different groups using color and fill:
-#'
+#' # Compare groups using color and fill:
 #' gapminder %>%
 #'   ggplot(aes(x = lifeExp, color = continent, fill = continent)) +
 #'   geom_density()
 #'
-#' # Adjust transparency (alpha):
-#'
+#' # Adjust transparency:
 #' gapminder %>%
-#'  ggplot(aes(x = lifeExp, color = continent, fill = continent)) +
-#'  geom_density(alpha = .3)
-geom_density <- function(){}
+#'   ggplot(aes(x = lifeExp, color = continent, fill = continent)) +
+#'   geom_density(alpha = 0.3)
+#'
+#' @seealso
+#' [ggplot()], [aes()], [geom_histogram()]
+NULL

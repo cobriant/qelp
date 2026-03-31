@@ -2,41 +2,33 @@
 #'
 #' Concatenate strings together.
 #'
-#' `paste()` is useful when you want to create a new string that is the
-#' result of combining two or more other strings. The strings are combined
-#' end-to-end.
+#' `paste()` combines strings with a separator (a space by default).
+#' `paste0()` is the same as `paste()` but uses no separator.
 #'
-#' `paste0()` is like `paste()` except that there is no separator.
+#' Typical use:
+#' `paste(..., sep = " ")`
 #'
-#' @details
+#' @name paste
+#' @aliases paste paste0
+#' @docType data
 #'
-#' First argument: a character vector.
+#' @section Arguments:
+#' \describe{
+#'   \item{...}{Character vectors to combine.}
+#'   \item{sep}{Separator placed between elements. Default is a space.}
+#' }
 #'
-#' Next arguments: additional character vectors to be pasted together.
-#'
-#' The default separator between vectors is a space. If you want to use a
-#' different separator, you can use the `sep` argument.
-#'
-#' `paste0(...)`
-#'
-#' `paste(..., sep = "")`
-#'
-#' @usage
-#'
-#' @examples
+#' @examplesIf interactive()
 #' paste("apple", "banana", "kiwi")
-#' #> "apple banana kiwi"
-#' 
-#' -----------------------------------
-#' 
-#' paste("apple", "banana", "kiwi", sep = "/")
-#' #> "apple/banana/kiwi"
 #'
-#' -----------------------------------
+#' #> [1] "apple banana kiwi"
+#'
+#' paste("apple", "banana", "kiwi", sep = "/")
+#'
+#' #> [1] "apple/banana/kiwi"
 #'
 #' paste0("apple", "banana", "kiwi")
-#' #> "applebananakiwi"
-#' 
-#' @export
-#' 
-paste <- function(){}
+#'
+#' #> [1] "applebananakiwi"
+#'
+NULL

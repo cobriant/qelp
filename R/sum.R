@@ -1,22 +1,27 @@
 #' Sum
 #'
-#' @description
+#' Returns the arithmetic sum of the input values.
 #'
-#' Returns the arithmetic sum of the inputs.
+#' Missing values (`NA`) will cause the result to be `NA` unless you set
+#' `na.rm = TRUE`, which removes missing values before computing the sum.
 #'
-#' @details
-#' Setting na.rm = TRUE will remove NA's
-#' before calculating the sum of the values.
-#'
+#' Typical use:
 #' `sum(..., na.rm = FALSE)`
 #'
-#' @usage
+#' @name sum
+#' @aliases sum
+#' @docType data
 #'
-#' @examples
+#' @section Arguments:
+#' \describe{
+#'   \item{...}{Numeric values or vectors to sum.}
+#'   \item{na.rm}{Whether to remove missing values before computing the sum.}
+#' }
+#'
+#' @examplesIf interactive()
 #' sum(c(1, 2, 3))
-#' #> [1] 6
 #'
-#' -----------------------------------
+#' #> [1] 6
 #'
 #' library(gapminder)
 #'
@@ -26,17 +31,14 @@
 #'   summarize(pop_total = sum(pop))
 #'
 #' #> # A tibble: 5 x 2
-#' #>   continent  pop_total
-#'      <fct>          <dbl>
+#' #>   continent pop_total
+#' #>   <fct>         <dbl>
 #' #> 1 Africa     929539692
 #' #> 2 Americas   898871184
 #' #> 3 Asia      3811953827
 #' #> 4 Europe     586098529
 #' #> 5 Oceania     24549947
 #'
-#' @export
 #' @seealso
-#'
 #' [summarize()], [mean()]
-#'
-sum <- function(){}
+NULL

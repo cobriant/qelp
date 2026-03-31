@@ -1,61 +1,63 @@
-#' Count observations by group
+#' Count Observations by Group
 #'
-#' Use `count()` to count the number of occurrences of the unique values
-#' of one or more variables in a tibble. `count(var)` does the same thing as
-#' `group_by(var) %>% summarize(n = n())`.
+#' Count the number of rows for each unique value of one or more variables.
 #'
-#' @usage
+#' `count(var)` is equivalent to:
+#' `group_by(var) %>% summarize(n = n())`
 #'
-#' count(data, var)
+#' Typical use:
+#' `count(data, ...)`
 #'
-#' @export
-#' @param data A tibble
-#' @param var The variable you'd like to `count()` by.
+#' @name count
+#' @aliases count
+#' @docType data
 #'
-#' @examples
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble.}
+#'   \item{...}{One or more variables to count by.}
+#' }
+#'
+#' @examplesIf interactive()
 #' library(gapminder)
 #'
-#' # Count how many observations gapminder
-#' # has for each continent:
-#'
+#' # Count observations by continent:
 #' count(gapminder, continent)
 #'
 #' #> # A tibble: 5 x 2
-#' #>  continent     n
-#'     <fct>     <int>
+#' #>   continent     n
+#' #>   <fct>     <int>
 #' #> 1 Africa      624
 #' #> 2 Americas    300
 #' #> 3 Asia        396
 #' #> 4 Europe      360
 #' #> 5 Oceania      24
 #'
-#'----------------------------------------------------
-#'
 #' pets <- tibble(
 #'   names = c("Steve", "Steve", "Rufus", "Sandy", "Sandy"),
-#'   animal = c("dog",  "cat",   "cat",   "dog",   "bird")
-#'   )
+#'   animal = c("dog", "cat", "cat", "dog", "bird")
+#' )
 #'
-#' # Count the number of pets each person has:
-#'
+#' # Count pets by owner:
 #' pets %>% count(names)
 #'
-#' #> A tibble: 3 x 2
-#' #> names     n
-#'    <chr> <int>
+#' #> # A tibble: 3 x 2
+#' #>   names     n
+#' #>   <chr> <int>
 #' #> 1 Rufus     1
 #' #> 2 Sandy     2
 #' #> 3 Steve     2
 #'
-#' # Count the number of animals by type:
-#'
+#' # Count animals by type:
 #' pets %>% count(animal)
 #'
-#' #> A tibble: 3 x 2
-#' #> animal     n
-#'    <chr>  <int>
+#' #> # A tibble: 3 x 2
+#' #>   animal     n
+#' #>   <chr>  <int>
 #' #> 1 bird       1
 #' #> 2 cat        2
 #' #> 3 dog        2
 #'
-count <- function(){}
+#' @seealso
+#' [group_by()], [summarize()], [n()]
+NULL

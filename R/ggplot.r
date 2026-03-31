@@ -1,30 +1,33 @@
-#' Initiate a new ggplot
+#' Initiate a New ggplot
 #'
-#' If you declare a dataset and an aesthetic mapping inside the `ggplot()` call,
-#' each layer will inherit that information by default.
+#' Create a new ggplot object. You can optionally supply a dataset and
+#' aesthetic mappings that will be inherited by all layers.
 #'
-#' @usage
+#' Typical use:
+#' `ggplot(data, aes(...))`
 #'
-#' ggplot(data, aes(x, y, ...))
+#' @name ggplot
+#' @aliases ggplot
+#' @docType data
 #'
-#' @export
-#' @param data A tibble.
-#' @param x Specify which variable should be drawn on the x-axis.
-#' @param y Specify which variable should be drawn on the y-axis.
-#' @param ... Any other aeshetic mappings (color, fill, etc).
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble.}
+#'   \item{mapping}{Aesthetic mappings created with `aes()`.}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(tidyverse)
 #' library(gapminder)
 #'
 #' # Draw a scatterplot:
-#'
 #' ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
 #'   geom_point()
 #'
 #' # Draw a histogram:
-#'
 #' ggplot(gapminder, aes(x = lifeExp)) +
 #'   geom_histogram()
 #'
-ggplot <- function(){}
+#' @seealso
+#' [aes()], [geom_point()], [geom_histogram()]
+NULL

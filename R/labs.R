@@ -1,34 +1,35 @@
-#' Modify ggplot labels
+#' Modify ggplot Labels
 #'
-#' Use a `labs()` layer to add a title and subtitle to the ggplot,
-#' modify x or y axis labels, and/or modify the legend label.
+#' Use `labs()` to add or modify plot titles, axis labels, and legend labels.
 #'
-#' @usage
+#' Typical use:
+#' `+ labs(title = ..., x = ..., y = ..., ...)`
 #'
-#' + labs(title, subtitle, x, y, color, ...)
+#' @name labs
+#' @aliases labs
+#' @docType data
 #'
-#' @export
-#' @param title A title for the ggplot. It's good practice to state the
-#'   main findings of the plot ("Life Expectancy Increases Over Time")
-#'   instead of just re-stating the names of the variables on each axis.
-#' @param subtitle If needed, you can specify a subtitle.
-#' @param x Rename the label on the x-axis.
-#' @param y Rename the label on the y-axis.
-#' @param color Rename the label on the legend for color (or fill, size, etc.)
+#' @section Arguments:
+#' \describe{
+#'   \item{title}{Plot title.}
+#'   \item{subtitle}{Optional subtitle.}
+#'   \item{x}{Label for the x-axis.}
+#'   \item{y}{Label for the y-axis.}
+#'   \item{color}{Label for the color legend (also applies to fill, size, etc.).}
+#'   \item{...}{Additional labels (e.g., `caption`, `fill`, `size`).}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(tidyverse)
 #' library(gapminder)
 #'
-#' # Add a title to a ggplot:
-#'
+#' # Add a title:
 #' gapminder %>%
 #'   ggplot(aes(x = year, y = lifeExp, color = continent)) +
 #'   geom_line(stat = "summary", fun = median) +
 #'   labs(title = "Life Expectancy Increases Over Time")
 #'
-#' # Also rename the y-axis from lifeExp to Median Life Expectancy:
-#'
+#' # Add multiple labels:
 #' gapminder %>%
 #'   ggplot(aes(x = year, y = lifeExp, color = continent)) +
 #'   geom_line(stat = "summary", fun = median) +
@@ -37,4 +38,6 @@
 #'     y = "Median Life Expectancy"
 #'   )
 #'
-labs <- function(){}
+#' @seealso
+#' [ggplot()], [aes()]
+NULL

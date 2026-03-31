@@ -1,33 +1,36 @@
-#' Select unique/distinct rows from a data frame
+#' Select Unique Rows from a Data Frame
 #'
-#' The `distinct()` function can be used to remove duplicated rows from a data frame.
-#' Duplicated rows are rows that have exactly the same values in all columns.
+#' Remove duplicate rows from a data frame. Rows are considered duplicates
+#' if all their values are identical.
 #'
-#' @details
-#'
-#' `distinct()` takes a data frame as an argument.
-#'
-#' `data %>% distinct()`
-#'
+#' Typical use:
 #' `distinct(data)`
 #'
-#' @usage
+#' Pipe-friendly use:
+#' `data %>% distinct()`
 #'
-#' @examples
-#' # De-duplicate a data frame:
-#' 
+#' @name distinct
+#' @aliases distinct
+#' @docType data
+#'
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble.}
+#' }
+#'
+#' @examplesIf interactive()
+#' # Remove duplicate rows:
 #' tibble(
-#'  country = c("Kuwait", "Kuwait", "Afganistan"),
-#'  year = c(1957, 1957, 1997),
-#'  lifeExp = c(58, 58, 41.8)
+#'   country = c("Kuwait", "Kuwait", "Afghanistan"),
+#'   year = c(1957, 1957, 1997),
+#'   lifeExp = c(58, 58, 41.8)
 #' ) %>%
 #'   distinct()
 #'
 #' #> # A tibble: 2 x 3
-#' #>     country    year  lifeExp
-#' #> 1   Kuwait     1957       58
-#' #> 2   Afganistan 1997     41.8
+#' #>   country      year lifeExp
+#' #>   <chr>       <dbl>   <dbl>
+#' #> 1 Kuwait       1957    58
+#' #> 2 Afghanistan  1997    41.8
 #'
-#' @export
-#'
-distinct <- function(){}
+NULL

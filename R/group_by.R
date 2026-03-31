@@ -1,26 +1,29 @@
-#' Group rows of a data frame
+#' Group Rows of a Data Frame
 #'
-#' Converts a data frame into a grouped data frame. Pairs well
-#' with [summarize()] or [mutate()]. Operations that you do after
-#' [group_by()] will be performed by group. Grouping attributes
-#' are removed by [dplyr::ungroup()].
+#' Converts a data frame into a grouped data frame. Pairs well with
+#' [summarize()] or [mutate()]. Operations performed after `group_by()`
+#' will be applied separately within each group. Grouping can be removed
+#' with [dplyr::ungroup()].
 #'
-#' @details
-#' First argument: a data frame.
-#'
-#' Next argument: a variable to use as the basis for grouping.
-#' If you provide more than one variable, every distinct
-#' combination will be separate groups.
-#'
+#' Typical use:
 #' `group_by(data, ...)`
 #'
+#' Pipe-friendly use:
 #' `data %>% group_by(...)`
 #'
-#' @usage
+#' @name group_by
+#' @aliases group_by
+#' @docType data
 #'
-#' @examples
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble.}
+#'   \item{...}{One or more variables to group by. Each unique combination
+#'   of values defines a group.}
+#' }
+#'
+#' @examplesIf interactive()
 #' # group_by() with summarize():
-#'
 #' tibble(
 #'   x = c(1, 1, 2, 2),
 #'   y = c(1, 3, 0, 2)
@@ -29,15 +32,12 @@
 #'   summarize(y_total = sum(y))
 #'
 #' #> A tibble: 2 x 2
-#' #>    x y_total
-#'    <dbl>   <dbl>
-#' #>    1       4
-#' #>    2       2
-#'
-#' -----------------------------------
+#' #>       x y_total
+#' #>   <dbl>   <dbl>
+#' #>       1       4
+#' #>       2       2
 #'
 #' # group_by multiple variables:
-#'
 #' tibble(
 #'   x = c(1, 1, 0, 0, 1),
 #'   y = c(3, 2, 3, 2, 3),
@@ -48,14 +48,12 @@
 #'
 #' #> # A tibble: 4 x 3
 #' #> # Groups:   x [2]
-#' #>    x     y z_mean
-#'   <dbl> <dbl>  <dbl>
-#' #>    0     2      6
-#' #>    0     3      4
-#' #>    1     2      6
-#' #>    1     3      5
-#'
-#' -----------------------------------
+#' #>       x     y z_mean
+#' #>   <dbl> <dbl>  <dbl>
+#' #>       0     2      6
+#' #>       0     3      4
+#' #>       1     2      6
+#' #>       1     3      5
 #'
 #' library(gapminder)
 #'
@@ -64,17 +62,14 @@
 #'   summarize(gdp_mean = mean(gdpPercap))
 #'
 #' #> # A tibble: 5 x 2
-#' #> continent   gdp_mean
-#'    <fct>          <dbl>
+#' #>   continent gdp_mean
+#' #>   <fct>        <dbl>
 #' #> 1 Africa       2194.
 #' #> 2 Americas     7136.
 #' #> 3 Asia         7902.
 #' #> 4 Europe      14469.
 #' #> 5 Oceania     18622.
 #'
-#' @export
 #' @seealso
-#'
 #' Other dplyr verbs: [filter()], [select()], [summarize()], [mutate()], [arrange()]
-#'
-group_by <- function(){}
+NULL

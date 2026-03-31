@@ -1,32 +1,34 @@
 #' Sequence
 #'
-#' @description
 #' Generate a numeric sequence.
 #'
-#' @details
-#' Create a numeric vector that is a sequence starting at the
-#' first argument, ending at the second, and incrementing by
-#' the third.
+#' Creates a vector starting at `from`, ending at `to`, and incrementing
+#' by `by`.
 #'
+#' Typical use:
 #' `seq(from, to, by)`
 #'
-#' @usage
+#' @name seq
+#' @aliases seq
+#' @docType data
 #'
-#' @examples
-#' seq(0, 1, by = .2)
+#' @section Arguments:
+#' \describe{
+#'   \item{from}{Starting value of the sequence.}
+#'   \item{to}{Ending value of the sequence.}
+#'   \item{by}{Step size between values.}
+#' }
+#'
+#' @examplesIf interactive()
+#' seq(0, 1, by = 0.2)
 #'
 #' #> [1] 0.0 0.2 0.4 0.6 0.8 1.0
 #'
-#' -----------------------------------
-#'
-#'# Sequences can go backwards:
+#' # Sequences can go backwards:
 #' seq(100, 0, by = -10)
 #'
 #' #> [1] 100  80  60  40  20   0
 #'
-#' @export
 #' @seealso
-#'
 #' [rep()], [c()], [sample()]
-#'
-seq <- function(){}
+NULL

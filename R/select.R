@@ -1,24 +1,27 @@
-#' Select columns of a data frame
+#' Select Columns of a Data Frame
 #'
-#' Select columns of a data frame by name, and rename
-#' or rearrange if needed.
+#' Select columns of a data frame by name. You can also reorder or rename
+#' columns as needed.
 #'
-#' @details
-#' First argument: a data frame.
-#'
-#' Next argument: name the variables you want to keep in the order
-#' you want them to be in. Alternatively, use `-` to name the
-#' variables you want to drop.
-#'
-#' `data %>% select(...)`
-#'
+#' Typical use:
 #' `select(data, ...)`
 #'
-#' @usage
+#' Pipe-friendly use:
+#' `data %>% select(...)`
 #'
-#' @examples
+#' @name select
+#' @aliases select
+#' @docType data
+#'
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble.}
+#'   \item{...}{Variables to keep, in the desired order. Use `-` to drop
+#'   variables, or `new_name = old_name` to rename variables.}
+#' }
+#'
+#' @examplesIf interactive()
 #' # Select and rearrange 2 variables:
-#'
 #' tibble(
 #'   x = c(1, 2, 3),
 #'   y = c(4, 5, 6),
@@ -28,15 +31,12 @@
 #'
 #' #> # A tibble: 3 x 2
 #' #>       z     x
-#'      <dbl> <dbl>
+#' #>   <dbl> <dbl>
 #' #>       7     1
 #' #>       8     2
 #' #>       9     3
 #'
-#' -----------------------------------
-#'
 #' # Drop a variable using '-':
-#'
 #' tibble(
 #'   x = c(1, 2, 3),
 #'   y = c(4, 5, 6),
@@ -45,16 +45,13 @@
 #'   select(-z)
 #'
 #' #> # A tibble: 3 x 2
-#' #>     x     y
-#'    <dbl> <dbl>
-#' #>     1     4
-#' #>     2     5
-#' #>     3     6
-#'
-#' -----------------------------------
+#' #>       x     y
+#' #>   <dbl> <dbl>
+#' #>       1     4
+#' #>       2     5
+#' #>       3     6
 #'
 #' # Rename a variable:
-#'
 #' tibble(
 #'   x = c(1, 2, 3),
 #'   y = c(4, 5, 6),
@@ -63,13 +60,11 @@
 #'   select(low_numbers = x, y)
 #'
 #' #> # A tibble: 3 x 2
-#' #> low_numbers     y
-#'          <dbl> <dbl>
+#' #>   low_numbers     y
+#' #>         <dbl> <dbl>
 #' #>           1     4
 #' #>           2     5
 #' #>           3     6
-#'
-#' -----------------------------------
 #'
 #' library(gapminder)
 #'
@@ -77,15 +72,12 @@
 #'   select(country, year, gdpPercap)
 #'
 #' #> # A tibble: 1,704 x 3
-#' #>    country      year gdpPercap
-#'       <fct>       <int>     <dbl>
-#' #>  1 Afghanistan  1952      779.
-#' #>  2 Afghanistan  1957      821.
-#' #>  3 Afghanistan  1962      853.
+#' #>   country      year gdpPercap
+#' #>   <fct>       <int>     <dbl>
+#' #> 1 Afghanistan  1952      779.
+#' #> 2 Afghanistan  1957      821.
+#' #> 3 Afghanistan  1962      853.
 #'
-#' @export
 #' @seealso
-#'
 #' Other dplyr verbs: [filter()], [group_by()], [summarize()], [mutate()], [arrange()]
-#'
-select <- function(){}
+NULL

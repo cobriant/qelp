@@ -1,25 +1,25 @@
-#' Fit a linear model
+#' Fit a Linear Model
 #'
-#' Run a regression using ordinary least squares.
-#
-#' @details
+#' Fit a regression model using ordinary least squares (OLS).
 #'
-#' @usage
+#' The model is specified using a formula, such as `y ~ x`, which represents
+#' the relationship between a dependent variable and one or more predictors.
 #'
-#' lm(formula, data)
+#' Typical use:
+#' `lm(formula, data)`
 #'
-#' @export
-#' @param formula A symbolic description of the model. For example:
-#'     `y ~ x` estimates the model `y = beta_0 + beta_1*x + u`.
+#' @name lm
+#' @aliases lm
+#' @docType data
 #'
-#' @param data A data frame like a tibble.
+#' @section Arguments:
+#' \describe{
+#'   \item{formula}{A symbolic description of the model (e.g., `y ~ x`).}
+#'   \item{data}{A data frame or tibble.}
+#' }
 #'
-#' @usage
-#'
-#' @examples
-#' # A tibble with the heights and weights
-#' # of 5 individuals:
-#'
+#' @examplesIf interactive()
+#' # A tibble with heights and weights:
 #' library(tidyverse)
 #'
 #' htwt <- tibble(
@@ -29,62 +29,40 @@
 #' )
 #'
 #' # Simple regression:
-#'
 #' lm(weight ~ height, data = htwt)
 #'
 #' # Simple regression with tidied output:
-#'
 #' lm(weight ~ height, data = htwt) %>%
 #'   broom::tidy(conf.int = TRUE)
 #'
-#' -----------------------------------
-#'
 #' # Multiple regression:
-#'
 #' lm(weight ~ height + sex, data = htwt)
 #'
 #' # Multiple regression without an intercept:
-#'
 #' lm(weight ~ 0 + height + sex, data = htwt)
 #'
-#' -----------------------------------
-#'
-#' # Interaction terms: ':' versus '*'
-#' #   Use ':' to include only an interaction.
-#' #   Use '*' to also include the terms alone.
-#' #   So 'x*z' is equivalent to 'x + z + x:z'
-#' #   And `x*y*z` is equivalent to
-#' #     'x + y + z + x:y + x:z + y:z + x:y:z'
-#'
+#' # Interaction terms:
+#' # ':' includes only the interaction
+#' # '*' includes main effects and interaction
 #' lm(weight ~ height:sex, data = htwt)
-#'
-#' lm(weight ~ height*sex, data = htwt)
-#'
-#' -----------------------------------
+#' lm(weight ~ height * sex, data = htwt)
 #'
 #' # Transformations of variables:
-#' #  To include a term squared, use I()
-#' #  to first parse the expression
-#' #  before fitting the model.
-#'
+#' # Use I() to include expressions like squares
 #' lm(weight ~ I(height^2), data = htwt)
 #'
-#' -----------------------------------
-#'
-#' # Fitted values and residuals
-#'
+#' # Fitted values and residuals:
 #' lm(weight ~ height, data = htwt) %>%
 #'   fitted.values()
 #'
 #' lm(weight ~ height, data = htwt) %>%
 #'   residuals()
 #'
-#' -----------------------------------
-#'
-#' # R squared
-#'
+#' # R-squared:
 #' lm(weight ~ height, data = htwt) %>%
 #'   broom::glance() %>%
 #'   select(r.squared)
 #'
-lm <- function(){}
+#' @seealso
+#' [predict()], [residuals()], [broom::tidy()], [broom::glance()]
+NULL

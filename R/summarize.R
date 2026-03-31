@@ -1,25 +1,31 @@
-#' Summarize data in a data frame
+#' Summarize Data in a Data Frame
 #'
-#' Summarizes a data frame by reducing it down to just a
-#' few rows using aggregate functions.
+#' Reduces a data frame down to one row per group by applying aggregate
+#' functions such as `mean()`, `sum()`, or `sd()`.
 #'
-#' @details
+#' First argument: a data frame, which may be grouped with `group_by()`.
 #'
-#' First argument: a data frame, which may be grouped (see [group_by()]]).
+#' Next arguments: new variable names paired with aggregate functions.
+#' Be sure to give each summary a name.
 #'
-#' Next arguments: an aggregate function applied to a variable. Make sure
-#' to give your aggregation a name.
-#'
+#' Typical use:
 #' `summarize(data, ...)`
 #'
+#' Pipe-friendly use:
 #' `data %>% summarize(...)`
 #'
-#' @usage
+#' @name summarize
+#' @aliases summarize
+#' @docType data
 #'
-#' @examples
-#' # Summarize the mean and standard
-#' # deviation of each variable:
+#' @section Arguments:
+#' \describe{
+#'   \item{data}{A data frame or tibble, possibly grouped.}
+#'   \item{...}{Named summary expressions such as `x_mean = mean(x)`.}
+#' }
 #'
+#' @examplesIf interactive()
+#' # Summarize the mean and standard deviation of each variable:
 #' tibble(
 #'   x = c(6, 7, 3),
 #'   y = c(5, 9, 0)
@@ -30,16 +36,12 @@
 #'   )
 #'
 #' #> A tibble: 1 x 4
-#' #> x_mean  x_sd y_mean  y_sd
-#'     <dbl> <dbl>  <dbl> <dbl>
-#' #>   5.33  2.08   4.67  4.51
+#' #>   x_mean  x_sd y_mean  y_sd
+#' #>    <dbl> <dbl>  <dbl> <dbl>
+#' #>    5.33  2.08   4.67  4.51
 #'
-#' -----------------------------------
-#'
-#' # If the data frame has been grouped, summarize
-#' # will return the same number of rows as there are
-#' # groups.
-#'
+#' # If the data frame has been grouped, summarize() will return
+#' # one row per group.
 #' tibble(
 #'   x = c(0, 1, 1, 0, 1),
 #'   y = c(2, 1, 2, 0, 0)
@@ -52,12 +54,10 @@
 #'   )
 #'
 #' #> A tibble: 2 x 4
-#' #>     x y_mean y_sum total_obs
-#'    <dbl>  <dbl> <dbl>     <int>
-#' #>     0      1     2         2
-#' #>     1      1     3         3
-#'
-#' -----------------------------------
+#' #>       x y_mean y_sum total_obs
+#' #>   <dbl>  <dbl> <dbl>     <int>
+#' #>       0      1     2         2
+#' #>       1      1     3         3
 #'
 #' library(gapminder)
 #'
@@ -66,19 +66,16 @@
 #'   summarize(gdp_mean = mean(gdpPercap))
 #'
 #' #> # A tibble: 5 x 2
-#' #> continent   gdp_mean
-#'      <fct>        <dbl>
+#' #>   continent gdp_mean
+#' #>   <fct>        <dbl>
 #' #> 1 Africa       2194.
 #' #> 2 Americas     7136.
 #' #> 3 Asia         7902.
 #' #> 4 Europe      14469.
 #' #> 5 Oceania     18622.
 #'
-#' @export
 #' @seealso
-#'
-#' Some aggregate functions: [mean()], [sd()], [median()], [quantile()], [n()]
+#' Some aggregate functions: [mean()], [sd()], [median()], [quantile()]
 #'
 #' Other dplyr verbs: [filter()], [group_by()], [arrange()], [mutate()], [select()]
-#'
-summarize <- function(){}
+NULL

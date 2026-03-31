@@ -1,35 +1,28 @@
-#' Log
+#' Logarithm
 #'
-#' @description
+#' Computes the natural logarithm of a value, or the natural log of each
+#' element of a numeric vector.
 #'
-#' Compute the natural logarithm of a value, or the natural log of each element of a vector.
+#' By default, `log()` uses the natural logarithm (base *e*), but you can
+#' change the base using the `base` argument.
 #'
-#' @details
-#'
+#' Typical use:
 #' `log(x, base = exp(1))`
 #'
-#' @usage
+#' @name log
+#' @aliases log
+#' @docType data
 #'
-#' @examples
+#' @examplesIf interactive()
 #' # Natural log of e:
-#'
 #' log(exp(1))
-#'
 #' #> [1] 1
 #'
-#' -----------------------------------
-#'
-#' # Compute the natural log of every
-#' # element of a vector:
-#'
+#' # Compute the natural log of each element of a vector:
 #' c(1, 2, 3) %>% log()
-#'
 #' #> [1] 0.0000000 0.6931472 1.0986123
 #'
-#' -----------------------------------
-#'
 #' # Use log() with mutate():
-#'
 #' library(gapminder)
 #'
 #' gapminder %>%
@@ -38,14 +31,11 @@
 #'
 #' #> # A tibble: 1,704 x 4
 #' #>   country      year gdpPercap gdp_log
-#'      <fct>       <int>     <dbl>   <dbl>
+#' #>   <fct>       <int>     <dbl>   <dbl>
 #' #> 1 Afghanistan  1952      779.    6.66
 #' #> 2 Afghanistan  1957      821.    6.71
 #' #> 3 Afghanistan  1962      853.    6.75
 #'
-#' @export
 #' @seealso
-#'
 #' [base::log2()], [base::log10()], [base::exp()], [mutate()]
-#'
-log <- function(){}
+NULL

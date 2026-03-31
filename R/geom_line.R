@@ -1,52 +1,48 @@
-#' Draw a line plot
+#' Draw a Line Plot
 #'
-#' `geom_line` is a geom that should be used in conjunction
-#' with `ggplot` to draw a line plot. Lines connect observations
-#' and are ordered by the variable on the x-axis.
+#' `geom_line()` adds a line layer to a ggplot. It connects observations
+#' in the order of the x-axis variable.
 #'
-#' @usage
+#' Typical use:
+#' `+ geom_line()`
 #'
-#' ggplot(data, aes(x, y, color)) +
-#'   geom_line()
+#' @name geom_line
+#' @aliases geom_line
+#' @docType data
 #'
-#' @export
-#' @param data A tibble to be used for the line plot
-#' @param x Specify which variable should be drawn on the x-axis.
-#' @param y Specify which variable should be drawn on the y-axis.
-#' @param color Specify which variable (if any) should be represented by line color.
+#' @section Arguments:
+#' \describe{
+#'   \item{mapping}{Aesthetic mappings created with `aes()` (e.g., `x`, `y`, `color`).}
+#'   \item{data}{Optional data frame for this layer.}
+#'   \item{...}{Other arguments such as `stat`, `linetype`, or `size`.}
+#' }
 #'
-#' @examples
+#' @examplesIf interactive()
 #' library(tidyverse)
 #' library(gapminder)
 #'
-#' # Draw a line plot to visualize how life expectancy
-#' # in a country increased over time:
-#'
+#' # Life expectancy in one country over time:
 #' gapminder %>%
 #'   filter(country == "Netherlands") %>%
 #'   ggplot(aes(x = year, y = lifeExp)) +
 #'   geom_line()
 #'
-#' # Draw a line plot to visualize how life expectancy
-#' # in multiple countries increased over time:
-#'
+#' # Life expectancy in multiple countries:
 #' gapminder %>%
 #'   filter(continent == "Oceania") %>%
 #'   ggplot(aes(x = year, y = lifeExp, color = country)) +
 #'   geom_line()
 #'
-#' # Draw a line plot to visualize how median life expectancy
-#' # in the world increased over time:
-#'
+#' # Median life expectancy over time:
 #' gapminder %>%
 #'   ggplot(aes(x = year, y = lifeExp)) +
 #'   geom_line(stat = "summary", fun = median)
 #'
-#' # Draw a line plot to visualize how median life expectancy
-#' # in each continent increased over time:
-#'
+#' # Median life expectancy by continent:
 #' gapminder %>%
 #'   ggplot(aes(x = year, y = lifeExp, color = continent)) +
 #'   geom_line(stat = "summary", fun = median)
 #'
-geom_line <- function(){}
+#' @seealso
+#' [ggplot()], [aes()], [geom_point()]
+NULL

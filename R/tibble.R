@@ -1,17 +1,17 @@
-#' Construct a data frame
-#'
-#' @description
+#' Construct a Data Frame
 #'
 #' Combine column vectors to form a tibble.
 #'
-#' @details
-#' The column vectors must be named and they must have the same length.
+#' All columns must be named and must have the same length.
 #'
+#' Typical use:
 #' `tibble(...)`
 #'
-#' @usage
+#' @name tibble
+#' @aliases tibble
+#' @docType data
 #'
-#' @examples
+#' @examplesIf interactive()
 #' tibble(
 #'   x = c(4, 0, 1),
 #'   y = c("apple", "banana", "economics"),
@@ -19,17 +19,13 @@
 #' )
 #'
 #' #> # A tibble: 3 x 3
-#' #>     x y         z
-#'    <dbl> <chr>     <lgl>
-#' #>     4 apple     TRUE
-#' #>     0 banana    TRUE
-#' #>     1 economics FALSE
+#' #>       x y         z
+#' #>   <dbl> <chr>     <lgl>
+#' #>       4 apple     TRUE
+#' #>       0 banana    TRUE
+#' #>       1 economics FALSE
 #'
-#' -----------------------------------
-#'
-#' # Create a data frame of statistics
-#' # from European countries:
-#'
+#' # Create a data frame of statistics from European countries:
 #' tibble(
 #'   country = c("Hungary", "Norway", "Czech Republic", "Montenegro"),
 #'   lifeExp = c(73.3, 80.2, 76.5, 74.5),
@@ -39,15 +35,12 @@
 #'
 #' #> # A tibble: 4 x 4
 #' #>   country        lifeExp      pop gdpPercap
-#'      <chr>            <dbl>    <dbl>     <dbl>
+#' #>   <chr>            <dbl>    <dbl>     <dbl>
 #' #> 1 Hungary           73.3  9956108     18009
 #' #> 2 Norway            80.2  4627926     49357
 #' #> 3 Czech Republic    76.5 10228744     22833
 #' #> 4 Montenegro        74.5   684736      9254
 #'
-#' @export
 #' @seealso
-#'
 #' Other R data structures: [c()], [list()]
-#'
-tibble <- function(){}
+NULL

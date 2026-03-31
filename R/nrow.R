@@ -1,17 +1,16 @@
-#' Number of rows in a data frame
+#' Number of Rows in a Data Frame
 #'
-#' @description
+#' Returns the number of rows in a data frame. Since rows correspond to
+#' observations, this is also the number of observations.
 #'
-#' Since rows are also observations, this is also the
-#' number of observations in a data frame.
-#'
-#' @details
-#'
+#' Typical use:
 #' `nrow(data)`
 #'
-#' @usage
+#' @name nrow
+#' @aliases nrow
+#' @docType data
 #'
-#' @examples
+#' @examplesIf interactive()
 #' tibble(
 #'   x = 1:5,
 #'   y = 6:10
@@ -20,27 +19,19 @@
 #'
 #' #> [1] 5
 #'
-#' -----------------------------------
-#'
 #' library(gapminder)
 #'
 #' gapminder %>% nrow()
 #'
 #' #> [1] 1704
 #'
-#' -----------------------------------
-#'
-#' # Use nrow with filter:
-#'
+#' # Use nrow() with filter():
 #' gapminder %>%
 #'   filter(lifeExp > 80) %>%
 #'   nrow()
 #'
 #' #> [1] 21
 #'
-#' @export
 #' @seealso
-#'
 #' [ncol()], [base::names()]
-#'
-nrow <- function(){}
+NULL

@@ -1,29 +1,24 @@
-#' Install a package
+#' Install a Package
 #'
-#' @description
+#' Install a package from the web so you can use it in R.
 #'
-#' To use an add-on package from the web, install it first.
-#' After it's installed, load it into your current R session
-#' using [library()].
+#' You only need to install a package once. After installing, you must
+#' load it in each new R session using [library()].
 #'
-#' You only have to install a package once, but you have to
-#' load it using [library()] every time you open a new R session.
+#' The package name must be in quotes.
 #'
-#' @details
-#' The package name needs quotes.
+#' Typical use:
+#' `install.packages("package_name")`
 #'
-#' `install.packages(package)`
+#' @name install.packages
+#' @aliases install.packages
+#' @docType data
 #'
-#' @usage
-#'
-#' @examples
-#' install.packages("tidyverse",  dependencies = TRUE)
+#' @examplesIf interactive()
+#' install.packages("tidyverse", dependencies = TRUE)
 #'
 #' install.packages("gapminder")
 #'
-#' @export
 #' @seealso
-#'
 #' [library()]
-#'
-install.packages <- function(){}
+NULL

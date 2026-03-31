@@ -1,18 +1,17 @@
-#' Number of columns in a data frame
+#' Number of Columns in a Data Frame
 #'
-#' @description
+#' Returns the number of columns in a data frame. Since columns correspond
+#' to variables, this is also the number of variables. See [base::names()]
+#' to view the variable names.
 #'
-#' Since columns are also variables, this is also the
-#' number of variables in a data frame. See [base::names()]
-#' to find what the variables are called.
-#'
-#' @details
-#'
+#' Typical use:
 #' `ncol(data)`
 #'
-#' @usage
+#' @name ncol
+#' @aliases ncol
+#' @docType data
 #'
-#' @examples
+#' @examplesIf interactive()
 #' tibble(
 #'   x = 1:5,
 #'   y = 6:10
@@ -21,17 +20,12 @@
 #'
 #' #> [1] 2
 #'
-#' -----------------------------------
-#'
 #' library(gapminder)
 #'
 #' gapminder %>% ncol()
 #'
 #' #> [1] 6
 #'
-#' @export
 #' @seealso
-#'
 #' [nrow()], [base::names()]
-#'
-ncol <- function(){}
+NULL
